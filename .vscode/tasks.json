@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Update hawksx",
+            "type": "shell",
+            "command": "ansible-playbook /workspace/ansible/server_update/server_update.yaml -i /workspace/ansible/hosts.yaml --limit hawksx,",
+            "problemMatcher": []
+        },
+        {
+            "label": "Update reddex",
+            "type": "shell",
+            "command": "ansible-playbook /workspace/ansible/server_update/server_update.yaml -i /workspace/ansible/hosts.yaml --limit reddex,",
+            "problemMatcher": []
+        },
+        {
+            "label": "Update webservers",
+            "type": "shell",
+            "command": "ansible-playbook /workspace/ansible/server_update/server_update.yaml -i /workspace/ansible/hosts.yaml",
+            "problemMatcher": []
+        },
+        {
+            "label": "Restart webservers",
+            "type": "shell",
+            "command": "ansible-playbook /workspace/ansible/server_update/server_update.yaml --tag 'restart' -i /workspace/ansible/hosts.yaml",
+            "problemMatcher": []
+        }
+    ]
+}

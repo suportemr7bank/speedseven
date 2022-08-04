@@ -1,0 +1,603 @@
+[
+    {
+        "model": "investorprofile.profile",
+        "pk": 1,
+        "fields": {
+            "name": "conservador",
+            "display_text": "Conservador"
+        }
+    },
+    {
+        "model": "investorprofile.profile",
+        "pk": 2,
+        "fields": {
+            "name": "moderado",
+            "display_text": "Moderado"
+        }
+    },
+    {
+        "model": "investorprofile.profile",
+        "pk": 3,
+        "fields": {
+            "name": "arrojado",
+            "display_text": "Arrojado"
+        }
+    },
+    {
+        "model": "investorprofile.profiletest",
+        "pk": 1,
+        "fields": {
+            "title": "FORMULÁRIO DE ADEQUAÇÃO DE PERFIL DO INVESTIDOR - “SUITABILITY”",
+            "description": "",
+            "info": "Este documento tem o intuito de mapearmos o perfil do nosso cliente, conforme suas\r\nexperiências e conhecimento no mercado financeiro, através de métricas pré-estabelecidas\r\npela instituição, para melhor adequação dos produtos e serviços oferecidos exclusivamente\r\npela plataforma SPEED 7. Tal adequação dos investimentos ao perfil dos clientes\r\n(suitability) é requerida pela Instrução CVM 539 de 13.11.2013 e posteriores alterações.\r\nCaso tenha alguma dúvida ou precise de algum esclarecimento adicional, consulte nossa\r\nequipe de atendimento.",
+            "is_active": true,
+            "published": true
+        }
+    },
+    {
+        "model": "investorprofile.test",
+        "pk": 1,
+        "fields": {
+            "profile_test": 1,
+            "title": "1. AVALIAÇÃO DA CAPACIDADE DE ASSUMIR RISCOS"
+        }
+    },
+    {
+        "model": "investorprofile.test",
+        "pk": 3,
+        "fields": {
+            "profile_test": 1,
+            "title": "2. AVALIAÇÃO DA TOLERÂNCIA A RISCO"
+        }
+    },
+    {
+        "model": "investorprofile.testscore",
+        "pk": 1,
+        "fields": {
+            "test": 1,
+            "profile": 1,
+            "score": 35
+        }
+    },
+    {
+        "model": "investorprofile.testscore",
+        "pk": 2,
+        "fields": {
+            "test": 1,
+            "profile": 2,
+            "score": 75
+        }
+    },
+    {
+        "model": "investorprofile.testscore",
+        "pk": 3,
+        "fields": {
+            "test": 1,
+            "profile": 3,
+            "score": 100
+        }
+    },
+    {
+        "model": "investorprofile.testscore",
+        "pk": 7,
+        "fields": {
+            "test": 3,
+            "profile": 1,
+            "score": 60
+        }
+    },
+    {
+        "model": "investorprofile.testscore",
+        "pk": 8,
+        "fields": {
+            "test": 3,
+            "profile": 2,
+            "score": 120
+        }
+    },
+    {
+        "model": "investorprofile.testscore",
+        "pk": 9,
+        "fields": {
+            "test": 3,
+            "profile": 3,
+            "score": 160
+        }
+    },
+    {
+        "model": "investorprofile.testquestion",
+        "pk": 1,
+        "fields": {
+            "test": 1,
+            "text": "<p><strong>a. Horizonte de investimento: voc&ecirc; pretende utilizar um percentual relevante dos seus </strong><strong>investimentos no curto ou m&eacute;dio prazo?</strong></p>"
+        }
+    },
+    {
+        "model": "investorprofile.testquestion",
+        "pk": 2,
+        "fields": {
+            "test": 1,
+            "text": "<p><strong>b. Momento de vida: assinale a alternativa que representa a sua necessidade de </strong><strong>recursos.</strong></p>"
+        }
+    },
+    {
+        "model": "investorprofile.testquestion",
+        "pk": 3,
+        "fields": {
+            "test": 1,
+            "text": "<p><strong>c. Distribui&ccedil;&atilde;o dos investimentos: como voc&ecirc; aloca os seus investimentos no Speed </strong><strong>7 ou em outras institui&ccedil;&otilde;es?</strong></p>"
+        }
+    },
+    {
+        "model": "investorprofile.testquestion",
+        "pk": 4,
+        "fields": {
+            "test": 1,
+            "text": "<p><strong>d. Situa&ccedil;&atilde;o financeira: qual &eacute; o percentual de aloca&ccedil;&atilde;o de seus ativos?</strong></p>\r\n<p>A. Liquidez (convers&atilde;o imediata em moeda corrente)<br />B. Investimentos financeiros (sem liquidez imediata)<br />C. Im&oacute;veis<br />D. Outros</p>"
+        }
+    },
+    {
+        "model": "investorprofile.testquestion",
+        "pk": 6,
+        "fields": {
+            "test": 3,
+            "text": "<p><strong>Conhecimento e Experi&ecirc;ncia: Informe o seu grau de conhecimento e experi&ecirc;ncia, o volume e a frequ&ecirc;ncia das opera&ccedil;&otilde;es em cada uma das classes de produtos, levando em considera&ccedil;&atilde;o as pondera&ccedil;&otilde;es abaixo:</strong></p>\r\n<p><strong>Baixo:</strong><span style=\"font-weight: 400;\"> N&atilde;o tenho familiaridade com o produto ou a classe de ativo.<br /></span><strong>M&eacute;dio:</strong><span style=\"font-weight: 400;\"> Compreendo as caracter&iacute;sticas e os riscos, por&eacute;m n&atilde;o tenho nem realizei investimento no produto ou na classe de ativo, em volumes superiores a 5% da minha carteira h&aacute; mais de 2 anos.<br /></span><strong>Alto:</strong><span style=\"font-weight: 400;\"> Tenho e/ou realizei investimentos no produto ou na classe em volumes superiores a&nbsp; 5% da minha carteira h&aacute; mais de 2 anos.</span></p>"
+        }
+    },
+    {
+        "model": "investorprofile.testquestion",
+        "pk": 7,
+        "fields": {
+            "test": 3,
+            "text": "<p><strong>a. Renda fixa</strong></p>"
+        }
+    },
+    {
+        "model": "investorprofile.testquestion",
+        "pk": 8,
+        "fields": {
+            "test": 3,
+            "text": "<p><strong>b. Fundos Multimercados e Estruturados</strong></p>"
+        }
+    },
+    {
+        "model": "investorprofile.testquestion",
+        "pk": 9,
+        "fields": {
+            "test": 3,
+            "text": "<p><strong>c. Renda Vari&aacute;vel</strong></p>"
+        }
+    },
+    {
+        "model": "investorprofile.testquestion",
+        "pk": 10,
+        "fields": {
+            "test": 3,
+            "text": "<p><strong>d. Fundos Imobili&aacute;rios</strong></p>"
+        }
+    },
+    {
+        "model": "investorprofile.testquestion",
+        "pk": 11,
+        "fields": {
+            "test": 3,
+            "text": "<p><strong>e. Derivados, COE e Private Equity</strong></p>"
+        }
+    },
+    {
+        "model": "investorprofile.testquestion",
+        "pk": 12,
+        "fields": {
+            "test": 3,
+            "text": "<p><strong>f. Expectativa: Voc&ecirc; acredita que, em per&iacute;odos de mais de cinco anos, produtos de maior risco (ex. a&ccedil;&otilde;es) s&atilde;o mais atrativos do que produtos de menor risco?</strong></p>"
+        }
+    },
+    {
+        "model": "investorprofile.testquestion",
+        "pk": 13,
+        "fields": {
+            "test": 3,
+            "text": "<p><strong>g. Conforto: Como voc&ecirc; reagiria se os seus investimentos ca&iacute;ssem mais de 10% (mesmo que temporariamente)?</strong></p>"
+        }
+    },
+    {
+        "model": "investorprofile.testquestion",
+        "pk": 14,
+        "fields": {
+            "test": 3,
+            "text": "<p><strong>h. Expectativa dos investimentos.</strong></p>"
+        }
+    },
+    {
+        "model": "investorprofile.testquestion",
+        "pk": 15,
+        "fields": {
+            "test": 3,
+            "text": "<p><strong>i. Forma&ccedil;&atilde;o acad&ecirc;mica e experi&ecirc;ncia profissional: Voc&ecirc; considera que sua forma&ccedil;&atilde;o acad&ecirc;mica e/ou experi&ecirc;ncia profissional lhe traz conhecimento sobre o mercado financeiro?</strong></p>"
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 1,
+        "fields": {
+            "test_question": 1,
+            "text": "Sim, pretendo utilizar um percentual relevante dos meus investimentos no curto prazo (até 1 ano).",
+            "score": 0
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 2,
+        "fields": {
+            "test_question": 1,
+            "text": "Sim, pretendo utilizar um percentual relevante dos meus investimentos no médio prazo (de 1 a 3 anos).",
+            "score": 10
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 3,
+        "fields": {
+            "test_question": 1,
+            "text": "Não tenho previsão de utilizar no curto e médio prazo.",
+            "score": 30
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 4,
+        "fields": {
+            "test_question": 2,
+            "text": "Vou precisar resgatar valores acima dos rendimentos financeiros ao longo dos próximos anos para manter o meu padrão de vida.",
+            "score": 0
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 5,
+        "fields": {
+            "test_question": 2,
+            "text": "Já acumulei o suficiente para manter meu padrão de vida com rendimentos financeiros. Esporadicamente precisarei resgatar valores acima dos rendimentos financeiros para cobrir as minhas despesas.",
+            "score": 10
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 6,
+        "fields": {
+            "test_question": 2,
+            "text": "Estou fazendo constantes aportes na carteira de investimento, aumentando o patrimônio financeiro.",
+            "score": 20
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 7,
+        "fields": {
+            "test_question": 3,
+            "text": "No Speed 7 eu tenho uma carteira mais conservadora do que nas demais instituições.",
+            "score": 0
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 8,
+        "fields": {
+            "test_question": 3,
+            "text": "Tenho carteiras equilibradas com o mesmo perfil de risco em todas as instituições financeiras.",
+            "score": 20
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 9,
+        "fields": {
+            "test_question": 3,
+            "text": "No Speed 7 eu tenho uma carteira mais agressiva do que nas demais instituições.",
+            "score": 40
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 10,
+        "fields": {
+            "test_question": 4,
+            "text": "(A) + (B): de 0% a 35%",
+            "score": 40
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 11,
+        "fields": {
+            "test_question": 4,
+            "text": "(A) + (B): de 36% a 70%",
+            "score": 75
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 12,
+        "fields": {
+            "test_question": 4,
+            "text": "(A) + (B): superior a 71%",
+            "score": 80
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 13,
+        "fields": {
+            "test_question": 7,
+            "text": "Baixo",
+            "score": 0
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 14,
+        "fields": {
+            "test_question": 7,
+            "text": "Médio",
+            "score": 1
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 15,
+        "fields": {
+            "test_question": 7,
+            "text": "Alto",
+            "score": 2
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 16,
+        "fields": {
+            "test_question": 8,
+            "text": "Baixo",
+            "score": 0
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 17,
+        "fields": {
+            "test_question": 8,
+            "text": "Médio",
+            "score": 2
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 18,
+        "fields": {
+            "test_question": 8,
+            "text": "Alto",
+            "score": 3
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 19,
+        "fields": {
+            "test_question": 9,
+            "text": "Baixo",
+            "score": 0
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 20,
+        "fields": {
+            "test_question": 9,
+            "text": "Médio",
+            "score": 4
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 21,
+        "fields": {
+            "test_question": 9,
+            "text": "Alto",
+            "score": 8
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 22,
+        "fields": {
+            "test_question": 10,
+            "text": "Baixo",
+            "score": 0
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 23,
+        "fields": {
+            "test_question": 10,
+            "text": "Médio",
+            "score": 4
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 24,
+        "fields": {
+            "test_question": 10,
+            "text": "Alto",
+            "score": 8
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 25,
+        "fields": {
+            "test_question": 11,
+            "text": "Baixo",
+            "score": 0
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 26,
+        "fields": {
+            "test_question": 11,
+            "text": "Médio",
+            "score": 4
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 27,
+        "fields": {
+            "test_question": 11,
+            "text": "Alto",
+            "score": 8
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 28,
+        "fields": {
+            "test_question": 12,
+            "text": "Não",
+            "score": 0
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 29,
+        "fields": {
+            "test_question": 12,
+            "text": "Depende",
+            "score": 10
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 30,
+        "fields": {
+            "test_question": 12,
+            "text": "Sim",
+            "score": 20
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 31,
+        "fields": {
+            "test_question": 13,
+            "text": "Venderia imediatamente.",
+            "score": 0
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 32,
+        "fields": {
+            "test_question": 13,
+            "text": "Entendo que isso pode acontecer para determinados ativos, mas não para o portfólio como um todo.",
+            "score": 20
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 33,
+        "fields": {
+            "test_question": 13,
+            "text": "Entendo que o meu portfólio está sujeito a sofrer flutuações dessa magnitude.",
+            "score": 40
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 34,
+        "fields": {
+            "test_question": 14,
+            "text": "Não estou disposto a sofrer flutuações negativas nos meus investimentos, mesmo em períodos curtos (1 mês).",
+            "score": 0
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 35,
+        "fields": {
+            "test_question": 14,
+            "text": "Com a expectativa de superar o CDI, admito flutuações negativas dos meus investimentos no curto prazo; porém, entendo que devem ser recuperadas em até 6 meses.",
+            "score": 20
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 36,
+        "fields": {
+            "test_question": 14,
+            "text": "Com a expectativa de superar de forma significativa o CDI, admito flutuações negativas dos meus investimentos; porém, entendo que devem ser recuperadas em até 12 meses.",
+            "score": 40
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 37,
+        "fields": {
+            "test_question": 14,
+            "text": "Busco retornos absolutos e admito flutuações negativas dos meus investimentos em períodos superiores a 12 meses.",
+            "score": 60
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 38,
+        "fields": {
+            "test_question": 15,
+            "text": "Não",
+            "score": 0
+        }
+    },
+    {
+        "model": "investorprofile.questionalternative",
+        "pk": 39,
+        "fields": {
+            "test_question": 15,
+            "text": "Sim",
+            "score": 10
+        }
+    },
+    {
+        "model": "investorprofile.investorprofile",
+        "pk": 1,
+        "fields": {
+            "user": 2,
+            "profile": 1,
+            "date_created": "2022-06-06T23:37:00.604Z",
+            "profile_test": 1,
+            "test_data": "{\"question_1\": \"1\", \"question_2\": \"4\", \"question_3\": \"7\", \"question_4\": \"10\", \"question_7\": \"13\", \"question_8\": \"16\", \"question_9\": \"19\", \"question_10\": \"22\", \"question_11\": \"25\", \"question_12\": \"28\", \"question_13\": \"31\", \"question_14\": \"34\", \"question_15\": \"38\"}"
+        }
+    },
+    {
+        "model": "investorprofile.investorprofile",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "profile": 1,
+            "date_created": "2022-06-06T23:39:22.033Z",
+            "profile_test": 1,
+            "test_data": "{\"question_1\": \"3\", \"question_2\": \"6\", \"question_3\": \"9\", \"question_4\": \"10\", \"question_7\": \"13\", \"question_8\": \"16\", \"question_9\": \"19\", \"question_10\": \"22\", \"question_11\": \"27\", \"question_12\": \"30\", \"question_13\": \"33\", \"question_14\": \"34\", \"question_15\": \"39\"}"
+        }
+    },
+    {
+        "model": "investorprofile.investorprofile",
+        "pk": 3,
+        "fields": {
+            "user": 2,
+            "profile": 2,
+            "date_created": "2022-06-06T23:39:45.438Z",
+            "profile_test": 1,
+            "test_data": "{\"question_1\": \"3\", \"question_2\": \"6\", \"question_3\": \"9\", \"question_4\": \"12\", \"question_7\": \"15\", \"question_8\": \"18\", \"question_9\": \"21\", \"question_10\": \"24\", \"question_11\": \"27\", \"question_12\": \"30\", \"question_13\": \"33\", \"question_14\": \"37\", \"question_15\": \"39\"}"
+        }
+    }
+]

@@ -1,0 +1,4 @@
+---
+db_user: "{{ application_db_user }}"
+db_name: "{{ application_db_name }}"
+db_pass: "{{ application_db_pass }}"

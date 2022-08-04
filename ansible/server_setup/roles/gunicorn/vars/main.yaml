@@ -1,0 +1,11 @@
+---
+gunicorn_user: "{{ user_name }}"
+gunicorn_group: "{{ user_group }}"
+gunicorn_application_name: "{{ application_name }}"
+gunicorn_project_path: "{{ project_path }}"
+gunicorn_virtualenv_path: "{{ virtualenv_path }}"
+gunicorn_log_file_dir: "{{ application_log_dir }}"
+gunicorn_log_file_prefix: gunicorn
+gunicorn_num_workers: 4
+gunicorn_max_requests: 0
+gunicorn_timeout_seconds: 30

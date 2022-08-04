@@ -1,0 +1,5 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/9686d795-5919-4f86-800f-d10fb159d82f/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/speedseven",
+    "appService.deploySubpath": ".",
+    "remote.localPortHost": "allInterfaces"
+}

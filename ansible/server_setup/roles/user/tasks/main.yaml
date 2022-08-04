@@ -1,0 +1,47 @@
+---
+- name: Create webapps groups
+  group:
+    name: "{{ user_group }}"
+    state: present
+    system: yes
+
+- name: Create user
+  user:
+    name: "{{ user_name }}"
+    groups:
+      - "{{ user_group }}"
+    state: present
+    shell: /bin/bash
+    system: yes
+    createhome: yes
+    home: "{{ user_home }}"
+
+- name: Create webapps folder
+  ansible.builtin.file:
+    path: "{{ user_home }}"
+    owner: "{{ user_name }}"
+    group: "{{ user_group }}"
+    state: directory
+
+- name: Create sites folder
+  ansible.builtin.file:
+    path:  "{{ sites_path }}"
+    owner: "{{ user_name }}"
+    group: "{{ user_group }}"
+    state: directory
+
+- name: Create ssh folder
+  ansible.builtin.file:
+    path:  "{{ user_home }}/.ssh"
+    owner: "{{ user_name }}"
+    group: "{{ user_group }}"
+    state: directory
+
+- name: Generate repository SSH key
+  openssh_keypair:
+    owner: "{{ user_name }}"
+    path: "{{ user_home }}/.ssh/{{ssh_repo_key_filename}}"
+    type: rsa
+    size: 4096
+    state: present
+    force: no

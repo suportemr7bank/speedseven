@@ -1,0 +1,24 @@
+{% if config.CORE_SHOW_MESSAGES and messages %}
+<div class="d-flex flex-column bd-highlight mb-3 position-absolute top-10 end-0">
+{% for message in messages %}
+    {% if 'core' in message.extra_tags %}
+        <div class="toast show mb-2" role="alert" aria-live="assertive" id="toast_{{forloop.counter}}"
+            aria-atomic="true" style="z-index: 1000;">
+            <div class="toast-header">
+                <strong class="me-auto text-primary">Mensagem</strong>
+                <small class="text-muted">{% now "H:i" %}</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"
+                    onclick="document.getElementById('toast_{{forloop.counter}}').remove()"></button>
+            </div>
+            <div class="toast-body">
+                <ul class="m-0 p-0" style="list-style: none;">
+                    <li>
+                        {{message}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    {% endif %}
+{% endfor %}
+</div>
+{% endif %}

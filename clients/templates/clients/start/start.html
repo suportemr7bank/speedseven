@@ -1,0 +1,108 @@
+{% extends 'common/page.html' %}
+{% load common_tags %}
+
+
+
+{% block menu %}
+
+ {{block.super}}
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "proName": "FOREXCOM:SPXUSD",
+        "title": "S&P 500"
+      },
+      {
+        "proName": "FOREXCOM:NSXUSD",
+        "title": "US 100"
+      },
+      {
+        "proName": "FX_IDC:EURUSD",
+        "title": "EUR/USD"
+      },
+      {
+        "proName": "BITSTAMP:BTCUSD",
+        "title": "Bitcoin"
+      },
+      {
+        "proName": "BITSTAMP:ETHUSD",
+        "title": "Ethereum"
+      }
+    ],
+    "showSymbolLogo": true,
+    "colorTheme": "{{request.theme}}",
+    "isTransparent": true,
+    "displayMode": "adaptive",
+    "locale": "br"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid pt-2">
+    <div class="row gx-2">
+        {% if products %}
+        <div class="col-lg-3" id="col_left_id">
+        {% else %}
+        <div class="col-lg-3 order-lg-first order-last" id="col_left_id">
+        {% endif %}    
+            <div class="d-flex flex-column bd-highlight mb-3">
+                <div class="mb-2">{% include 'clients/start/client_info.html' %}</div>
+                {% if products %}
+                <div class="mb-2">{% include 'clients/start/overview.html' %}</div>
+                <div class="mb-2">{% include 'clients/start/operations.html' %}</div>
+                <div class="mb-2">{% include 'clients/start/my_produts.html' %}</div>
+                {% endif %}
+                <div class="mb-2">{% include 'clients/start/currency.html' %}</div>
+            </div>
+        </div>
+        {% if products %}
+        <div class="col-lg-9 mb-0 pb-0 main-dashboard">
+            {% include 'clients/start/chart_area.html' %}
+        </div>
+        {% else %}
+        <div class="col-lg-9 m-0 p-0 main-dashboard">
+          <div class="row justify-content-center mx-1 mb-2">
+            <div class="card">
+              <div class="card-header">
+                {% if request.user.client.approved %}
+                <div class="h1 text-center">
+                  Invista agora
+                </div>
+                <div class="card-body px-0 text-center">
+                  <a class="btn btn-lg btn-success text-decoration-none" href="{% url 'clients:products_page' %}">
+                    <span class="h3 text-dark">Contrate um de nossos produtos</span></a>
+                </div>
+                {% else %}
+                <div class="h1 text-center">
+                  Abertura de conta em análise
+                </div>
+                <div class="card-body px-0 text-center">
+                  <a class="btn btn-lg btn-success text-decoration-none" href="{% url 'clients:client_update' %}">
+                    <span class="h3 text-dark">Consulte seu cadastro</span></a>
+                </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+    </div>
+
+    {% include 'common/document_modal.html' %}
+
+    {% for message in messages %}
+    {% if 'core_modal' in message.extra_tags %}
+    {% include 'common/message_modal.html' %}
+    {% endif %}
+    {% endfor %}
+
+
+    {% endblock %}

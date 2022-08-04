@@ -1,0 +1,50 @@
+{% extends 'common/base.html' %}
+
+{% block menu %}
+    {% include 'clients/menu.html' with HIDE_TIKER_TAKE=True %}
+{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-center mt-4" >
+    <div class="card">
+        <div class="card-header">
+            <div class="h2 text-success pb-2"> {{title}}</div>
+            {% if header_message %}
+                <div class="pb-2"> {{header_message|safe}}</div>
+            {% endif %}
+        </div>
+        <div class="card-body m-0 p-2">
+            <ul class="list-group list-group-flush">
+                {% if request.user.client.created or request.user.client.disapproved %}
+                <li class=" list-group-item ps-2"><a class='page-menu-link h5 text-success text-decoration-none' href="{% url 'clients:client_update' %}">Cadastrar dados pessoais</a></li>
+                {% elif request.user.client.waiting %}
+                <li class=" list-group-item ps-2"><a class='page-menu-link h5 text-success text-decoration-none' href="{% url 'clients:client_update' %}">Cadastro em análise <i class="bi bi-hourglass text-success"></i></a></li>
+                {% elif request.user.client.approved %}
+                <li class=" list-group-item ps-2"><a class='page-menu-link h5 text-success text-decoration-none' href="{% url 'clients:client_update' %}">Dados pessoais <i class="bi bi-check-lg text-success"></i></a></li>
+                {%endif %}
+
+                {% if not bank_account or bank_account.created or bank_account.disapproved %}
+                <li class=" list-group-item ps-2"><a class='page-menu-link h5 text-success text-decoration-none' href="{% url 'clients:bank_account_list' %}">Cadastrar dados bancários</a></li>
+                {% elif bank_account.waiting %}
+                <li class=" list-group-item ps-2"><a class='page-menu-link h5 text-success text-decoration-none' href="{% url 'clients:bank_account_list' %}">Dados bancários em análise  <i class="bi bi-hourglass text-success"></i></a></li>
+                {% elif bank_account.approved %}
+                <li class=" list-group-item ps-2"><a class='page-menu-link h5 text-success text-decoration-none' href="{% url 'clients:bank_account_list' %}">Dados bancários <i class="bi bi-check-lg text-success"></i></a></li>
+                {%endif %}
+                
+
+                {% if not term_acceptance_completed %}
+                <li class="list-group-item ps-2"><a class='h5 text-success text-decoration-none' href="{% url 'clients:acceptance_term_create' %}">Política de privacidade</a></li>
+                {% else %}
+                <li class="list-group-item h5 ps-2 text-success text-muted">Política de privacidade <i class="bi bi-check-lg text-success"></i></li>
+                {%endif %}
+
+                {% if not profile_test_completed%}
+                    <li class="list-group-item ps-2"> <a class='h5 text-success text-decoration-none' href="{% url 'clients:investor_profile_test_create' %}">Perfil de investidor</a></li>
+                {% else %}
+                    <li class="list-group-item h5 ps-2 text-success text-muted">Perfil de investidor <i class="bi bi-check-lg text-success"></i></li>
+                {%endif %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

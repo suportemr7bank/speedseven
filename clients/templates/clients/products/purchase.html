@@ -1,0 +1,102 @@
+{% extends 'common/page.html' %}
+{% load common_tags %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container-fluid pt-2 noprint">
+    <h1 class="text-success my-4 ps-4">Contratar produto</h1>
+    {% if product %}
+    <form method="post" id="id_agreement_form" data-agreement-url="{% url 'products:agreement_data' %}" data-extra-args="{{purchase_form.extra_args_fields|join:','}}">
+        {% csrf_token %}
+        {{ purchase_form.product }}
+        {% if purchase_form.product.errors %}
+        <div class="row mx-4">
+            <div class="col alert alert-success">
+                {% for error in purchase_form.product.errors %}
+                <div>{{ error|escape }}</div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 col-md-6" id="id_product_{{product.name}}">
+                <div class="p-lg-4 py-2">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <div class="fw-bold fs-2 mb-2"> {{product.display_text}} </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    {% if product_access %}
+                                        {% if not product.purchased %}
+                                        <div class="ms-4 my-4 text-start">
+                                            {% if request.user.client.approved %} 
+                                                
+                                            {% crispy purchase_form %}
+    
+                                            <button name='purchase_product' id="id_purchase_product"
+                                                    class="btn btn-success m-auto mb-4"
+                                                    data-product="{{product.pk}}">
+                                                    Contratar
+                                            </button>
+
+                                            {% else %}
+                                                <p class="text-success m-auto">Você poderá contratar este produto após a aprovação do seu cadastro</p>
+                                            {% endif %}
+                                        </div>
+                                        {% else %}
+                                        <div class="ms-4 my-4 text-start">
+                                            <p id="id_purchase_product" class="text-success fw-bold m-auto">
+                                                Você já possui este produto
+                                            </p>
+                                        </div>
+                                        {% endif %}
+                                    {% else %}
+                                        <div class="ms-4 my-4 text-start">
+                                            <p class="text-success m-auto">
+                                            O produto que deseja contratar não é compatível com seu perfil de investimento
+                                            </p>
+                                            <p class="text-success fw-bold m-auto mt-2">
+                                            Você pode verificar e revisar seu enquadramento no menu "Consultas / Perfil de investimento"
+                                            </p>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col ms-4">
+                                     <a class="text-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_info" aria-expanded="false" aria-controls="collapseExample">
+                                        Detalhes do investimento
+                                     </a>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapse_info">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="product-info">
+                                            {% if product.info %}
+                                            <div class="px-4">{{product.info|safe}}</div>
+                                            {% else %}
+                                            <div class="px-4">Sem informações no momento</div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    {% else %}
+    <div class="row ps-4">
+        <div class="col text-success">Opção indisponível no momento</div>
+    </div>
+    {% endif %}
+</div>
+
+{% include 'common/agreement_modal.html' %}
+
+{% endblock %}

@@ -1,0 +1,101 @@
+[
+    {
+        "model": "investment.applicationmodel",
+        "pk": 1,
+        "fields": {
+            "name": "conta_pool",
+            "display_text": "Conta pool com juros simples diários",
+            "app_model_class": "SimpleInterestPoolAccount",
+            "date_created": "2022-05-05T14:00:01.087Z",
+            "is_active": true,
+            "operator": 1
+        }
+    },
+    {
+        "model": "investment.applicationmodel",
+        "pk": 2,
+        "fields": {
+            "name": "crowdfunding",
+            "display_text": "Crowdfunding",
+            "app_model_class": "Crowdfunding",
+            "date_created": "2022-07-04T19:00:01.087Z",
+            "is_active": true,
+            "operator": 1
+        }
+    },
+    {
+        "model": "investment.application",
+        "pk": 1,
+        "fields": {
+            "name": "conta_pool",
+            "display_text": "Conta pool",
+            "application_model": 1,
+            "date_created": "2022-05-05T14:00:30.059Z",
+            "is_active": true,
+            "has_application_settings": true,
+            "has_account_settings": true,
+            "operator": 1,
+            "settings_related_name": "pool_account_settings"
+        }
+    },
+    {
+        "model": "investment.application",
+        "pk": 2,
+        "fields": {
+            "name": "crowdfunding",
+            "display_text": "Crowdfunding",
+            "application_model": 2,
+            "date_created": "2022-07-05T19:10:30.059Z",
+            "is_active": true,
+            "has_application_settings": true,
+            "has_account_settings": true,
+            "operator": 1,
+            "settings_related_name": "crowdfunding_settings"
+        }
+    },
+    {
+        "model": "investment.applicationaccount",
+        "pk": 1,
+        "fields": {
+            "user": 2,
+            "application": 1,
+            "date_created": "2022-05-05T15:13:58.026Z",
+            "date_activated": "2022-05-05T15:14:31.509Z",
+            "date_deactivated": null,
+            "is_active": true,
+            "operator": 1,
+            "creation_status": "CRE",
+            "message": null
+        }
+    },
+    {
+        "model": "investment.applicationaccount",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "application": 1,
+            "date_created": "2022-05-05T15:13:58.026Z",
+            "date_activated": "2022-05-05T15:14:31.509Z",
+            "date_deactivated": null,
+            "is_active": true,
+            "operator": 1,
+            "creation_status": "CRE",
+            "message": null
+        }
+    },
+    {
+        "model": "investment.applicationaccount",
+        "pk": 3,
+        "fields": {
+            "user": 2,
+            "application": 2,
+            "date_created": "2022-07-04T19:11:00.026Z",
+            "date_activated": "2022-07-04T19:12:31.509Z",
+            "date_deactivated": null,
+            "is_active": true,
+            "operator": 1,
+            "creation_status": "CRE",
+            "message": null
+        }
+    }
+]

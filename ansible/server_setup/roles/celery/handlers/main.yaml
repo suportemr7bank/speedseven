@@ -1,0 +1,12 @@
+---
+- name: Restart celery
+  systemd:
+    name: celeryd
+    state: restarted
+    daemon_reload: yes
+
+- name: Restart celery beat
+  systemd:
+    name: celerybeatd
+    state: restarted
+    daemon_reload: yes

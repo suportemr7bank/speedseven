@@ -1,0 +1,34 @@
+{% load common_tags %}
+<div class="card d-flex flex-column">
+    <div class="card-header">
+        <div class="h4">Meus produtos</div>
+    </div>
+    <div class="">
+        <button class="btn text-success">3M</button>
+        <button class="btn text-success">6M</button>
+        <button class="btn text-success">1A</button>
+        <button class="btn text-warning">3A</button>
+    </div>
+    <div class="card-body m-0 p-2" style="max-height: 15rem">
+        <div class="table-responsive">
+            <table class='table table-sm table-{{request.theme}}'>
+                <tr>
+                    <th>Produto</th>
+                    <th class="text-end">Rent.(R$)</th>
+                    <th class="text-end">ROI(%)</th>
+                    <th class="text-end">Total(R$)</th>
+                </tr>
+                <body>
+                    {% for product in products %}
+                    <tr>
+                        <td > {{product.name}} </td>
+                        <td class="text-end text-success">5000,00</td>
+                        <td class="text-end text-success">100,1</td>
+                        <td class="text-end text-success">14020,45</td>
+                    </tr>
+                    {% endfor %}
+                </body>
+            </table>
+        </div>
+    </div>
+</div>

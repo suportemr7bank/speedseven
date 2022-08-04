@@ -1,0 +1,38 @@
+{% extends 'common/base.html' %}
+
+{% block content %}
+<div class="container-fluid mt-2 text-success noprint">
+    <div class="card">
+        <div class="card-header">
+            {% block page_title %}
+            <div class="h2 text-secondary pb-2"> {{title}}</div>
+            {% endblock %}
+            {% block page_header %}
+            <div class="noprint">
+                <div class="d-flex flex-row pb-2">
+                    <a class="d-inline-flex btn btn-success px-2" data-bs-toggle="modal" data-bs-target="#report_modal"
+                        onclick="window.print()"> Imprimir</a>
+                </div>
+            </div>
+            {% endblock %}
+        </div>
+        <div class="card-body">
+            <div class="container-fluid m-0 p-0">
+                <div class="container noprint pt-4 pb-4">
+                    <div class="d-flex flex-column justify-content-center bg-white text-black border"
+                        style="padding: 5rem 5rem;">
+                        {{content.text|safe}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid m-0 p-0">
+    <div class="print" style="display: none">
+        <div class="d-flex flex-column justify-content-center bg-white text-black" style="padding: 1rem 2rem;">
+            {{content.text|safe}}
+        </div>
+    </div>
+</div>
+{% endblock %}

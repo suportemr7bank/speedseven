@@ -1,0 +1,38 @@
+[
+    {
+        "model": "core.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$PB25qlS5LqZSuwq8DH4RTV$PhwKyAZYfl+7MWPlQFdZXp0Mk6XAP5adq6VmSdkhwVA=",
+            "last_login": "2022-05-05T13:47:54.447Z",
+            "is_superuser": true,
+            "username": "admin@speedseven.com",
+            "first_name": "",
+            "last_name": "",
+            "email": "admin@speedseven.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2022-05-05T13:47:11.439Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$kksmDD3mDUuMJN7VCYAO2L$KmAK22eAXSvBqVeogjWYZl0bbgI7QvhwGa+xGHrjndI=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "client@speedseven.com",
+            "first_name": "Client",
+            "last_name": "Speedseven",
+            "email": "client@speedseven.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-05-05T13:49:18.740Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]

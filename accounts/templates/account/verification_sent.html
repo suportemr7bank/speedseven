@@ -1,0 +1,29 @@
+{% extends 'common/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="d-flex justify-content-center align-items-center light" 
+      style="height: 100vh; background-image: url({% static 'website/login.jpg' %}); background-repeat: no-repeat; background-size: cover;">
+    
+    <div class="card login" style="max-width:600px; border-radius: 70px; padding: 20px; margin: 40px">
+      <div class="card-header bg-transparent border-0 text-center">
+        <span class='h1 text-black'>{{request.site.name}}</span>
+      </div>
+      <div class="card-body pt-4">
+        <p class="h2 text-secondary pb-2 text-center"> Verificação de email</p>
+        <div class="text-secondary pb-2"> 
+            Um email de verificação foi enviado para o seu endereço.
+        </div>
+        <div class="text-secondary pb-2"> 
+            Clique no link fornecido para finalizar o processo de inscrição. 
+        </div>
+        <div class="text-secondary pb-2"> 
+            Caso não receba o e-mail dentro de alguns minutos, verifique sua caixa de span ou entre em contato conosco se o problema persistir.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+{% endblock %}

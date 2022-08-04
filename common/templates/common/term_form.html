@@ -1,0 +1,54 @@
+{% extends 'common/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container-fluid p-0 m-0 position-relative">
+    <div class="card m-2">
+        <div class="card-header">
+            <div class="h2 text-success pb-2"> {{title}}</div>
+            {% if header_message %}
+            <div class="text-success pb-2"> {{header_message|safe}}</div>
+            {% endif %}
+        </div>
+
+        {% if term %}
+        <div class="card-body">
+            <div class="pt-2">
+                <div class="d-flex flex-column justify-content-center" style="padding: 3rem 5rem;">
+                    <div class='h4 pt-4'>{{term.title}}</div>
+                    {{term.text|safe}}
+                </div>
+            </div>
+
+        </div>
+        <div class="card-footer bg-transparent">
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-end">
+
+                <div class="me-auto m-0 p-0">
+                    <form class="m-0 p-0" method="post" autocomplete="off" novalidate id="form_id">
+                        {% block form %}
+                        {% crispy form %}
+                        {% endblock %}
+                    </form>
+                </div>
+
+                {% block buttons %}
+                {% for control in controls %}
+                {% if control.control_type == 'button' %}
+                <button id="id_accept_term_button" type="submit" form="form_id" name="{{control.name}}"
+                    value="{{control.value}}" class="btn btn-{{control.color}}" disabled>{{control.text}}</button>
+                {% elif control.control_type == 'link' and control.value %}
+                <a class="btn btn-{{control.color}}" href="{{control.value}}">{{control.text}}</a>
+                {% endif %}
+                {% endfor %}
+                {% endblock %}
+            </div>
+        </div>
+        {% else %}
+        <div class="card-body">
+            <div class="h4 text-success"> Etapa não disponível no momento. Tente mais tarde </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

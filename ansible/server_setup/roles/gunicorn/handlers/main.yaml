@@ -1,0 +1,5 @@
+- name: Restart gunicorn service
+  systemd:
+    name: "{{ gunicorn_application_name }}"
+    state: restarted
+    daemon_reload: yes

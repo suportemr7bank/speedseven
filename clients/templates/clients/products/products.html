@@ -1,0 +1,72 @@
+{% extends 'common/page.html' %}
+{% load common_tags %}
+
+{% block content %}
+<div class="container-fluid pt-2 noprint">
+    <h1 class="text-success my-4 ps-4 pb-2">Nossos produtos</h1>
+    
+    {% if categories %}
+        {% for category, products in categories.items %}
+        <div class="h2 ps-4 pt-4 text-success">{% if category.show_title %}{{category.title}}{% endif %}</div>
+            <div class="d-flex pe-4 flex-wrap pb-4 justify-content-center">
+                {% for document in category.categorydocument_set.all %}
+                <a href="{% url 'clients:category_document_detail' document.pk %}" class="mx-4 text-decoration-none text-success">{{document.display_text}} </a>
+                {% endfor %}
+            </div>
+            <div class="row mx-1 mb-4 pb-4">
+            {% for product in products %}
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="py-2">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                <div class="fw-bold fs-2 mb-2"> {{product.display_text}} </div>
+                            </div>
+                            <div class="card-body">
+                                {% if product.briefing %}
+                                <div class="row">
+                                    <div class="col">
+                                        <div>{{product.briefing|safe}}</div>
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {%if product.application_info %}
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="mb-2"> {{product.application_info|safe}} </div>
+                                    </div>
+                                </div>
+                                {% endif %}
+                                <hr>
+                                <div class="row mt-4">
+                                    {% if not product.purchased %} 
+                                        <div class="col text-start">
+                                            <a href="{% url 'clients:products_purchase_page' product.id %}"
+                                                class="btn btn-success m-auto">
+                                                Saber mais e contratar
+                                            </a>
+                                        </div>
+                                        {% else %}
+                                        
+                                        <div class="col text-start">
+                                            <a href="{% url 'clients:products_purchase_page' product.id %}"
+                                                class="btn btn-secondary m-auto">
+                                                Saber mais
+                                            </a>
+                                        </div>
+                                        <div class="col text-end pt-2"><span class="text-success fw-bold"> Contratado! </span></div>
+                                        {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        {% endfor %}
+    {% else %}
+    <div class="row ps-4">
+        <div class="col text-success">Opção indisponível no momento</div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

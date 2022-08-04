@@ -1,0 +1,20 @@
+<div id="page_style_id" class="page-content">
+    {% block extra_style %}
+    {% endblock %}
+</div>
+
+<div id="page_content_id" class="page-content">
+    {% block content %}
+    {% endblock %}
+</div>
+
+<div id="page_script_id" class="page-content">
+    {% block extra_scripts %}
+    {% endblock %}
+</div>
+
+<div id="page_message_id" class="page-content">
+    {% block message %}
+    {% include 'common/messages.html' %}
+    {% endblock %}
+</div>

@@ -1,0 +1,52 @@
+---
+- name: Git pull
+  become_user: "{{ user_name }}"
+  git:
+    repo: "{{ git_repository }}"
+    dest: "{{ django_project_path }}"
+    version: master
+    accept_hostkey: yes
+    clone: no
+    key_file: /{{user_group}}/.ssh/{{ ssh_repo_key_filename }}
+  register: repo
+
+- name: Change ownership
+  file:
+    path: "{{ django_project_path }}"
+    group: "{{ user_group }}"
+    state: directory
+    recurse: yes
+  when: repo.changed
+
+- name: Install requirements
+  pip:
+    requirements:  "{{ django_project_path }}/requirements.txt"
+    virtualenv: "{{ virtualenv_path }}"
+  when: repo.changed
+
+- name: Run Django database migrations
+  django_manage:
+    command: migrate
+    app_path: "{{ django_project_path }}"
+    virtualenv: "{{ virtualenv_path }}"
+    settings: "{{ django_settings_file }}"
+  become_user: "{{ user_name }}"
+  environment: 
+    DEBUG: "False"
+    SECRET_KEY: "{{ django_secret_key }}"
+    DATABASE_URL: "{{ application_db_env_url }}"
+  when: repo.changed
+
+- name: Run django collectstatic
+  django_manage:
+    command: collectstatic
+    app_path: "{{ django_project_path }}"
+    virtualenv: "{{ virtualenv_path }}"
+    settings: "{{ django_settings_file }}"
+  become_user: "{{ user_name }}"
+  environment: 
+    DEBUG: "False"
+    SECRET_KEY: "{{ django_secret_key }}"
+    DATABASE_URL: "{{ application_db_env_url }}"
+
+

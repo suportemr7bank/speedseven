@@ -1,0 +1,25 @@
+---
+# Http will be redirected to https://{{ nginx_main_server }}
+nginx_main_server: "{{ ansible_host }}"
+
+nginx_server_name_http: "{{ server_name_http }}"
+
+nginx_server_name_https: "{{ server_name_https }}"
+
+nginx_application_name: "{{ application_name }}"
+
+nginx_static_dir: ""
+
+nginx_media_public_url: "{{ media_public_url }}"
+
+nginx_media_public_dir: "{{ media_public_dir }}"
+
+nginx_log_file_dir: "{{ application_log_dir }}"
+
+nginx_ssl_crt_file: "{{ ssl_crt_file }}"
+
+nginx_ssl_key_file: "{{ ssl_key_file }}"
+
+nginx_ssl_source_folder: "{{ ssl_source_folder }}"
+
+nginx_ssl_target_folder: "{{ ssl_target_folder }}"

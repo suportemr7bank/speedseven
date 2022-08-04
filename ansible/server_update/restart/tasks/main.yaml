@@ -1,0 +1,24 @@
+---
+- name: Restart gunicorn
+  systemd:
+    name: "{{ application_name }}"
+    state: restarted
+  ignore_errors: true
+
+- name: Restart nginx
+  systemd:
+    name: "nginx"
+    state: restarted
+  ignore_errors: true
+
+- name: Restart celery
+  systemd:
+    name: "celeryd"
+    state: restarted
+  ignore_errors: true
+
+- name: Restart celery beat
+  systemd:
+    name: "celerybeatd"
+    state: restarted
+  ignore_errors: true

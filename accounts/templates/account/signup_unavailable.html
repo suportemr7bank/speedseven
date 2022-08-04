@@ -1,0 +1,21 @@
+{% extends 'common/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="d-flex justify-content-center align-items-center light" 
+      style="height: 100vh; background-image: url({% static 'website/login.jpg' %}); background-repeat: no-repeat; background-size: cover;">
+    
+    <div class="card login" style="max-width:800px; border-radius: 70px; padding: 20px; margin: 40px">
+      <div class="card-header bg-transparent border-0 text-center">
+        <span class='h1 text-black'>{{request.site.name}}</span>
+      </div>
+      <div class="card-body pt-4">
+          <p class="h2 text-secondary text-center">Cadastro indisponível</p>
+          <p class="h2 text-secondary text-center">Tente mais tarde</p>
+      </div>
+    </div>
+
+  </div>
+
+{% endblock %}

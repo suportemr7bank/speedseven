@@ -1,0 +1,87 @@
+<div class="card ">
+    <div class="card-header">
+        <div class="h4 text-primary">
+            Invista agora
+        </div>
+    </div>
+    <div class="card-body  m-0 p-2">
+        <table class='table table-sm table-borderless'>
+            <body>
+                {% if products %}
+                <tr>
+                    <td><a class="btn text-primary p-0 m-0" href="{% url 'clients:products_page' %}">Nossos produtos</a></td>
+                    <td class="text-end"><a class="page-menu-link" href="{% url 'clients:products_page' %}"><i
+                                class="bi bi-bag btn text-primary p-0 m-0 "></a></i></td>
+                </tr>
+                <tr>
+                    <td><a class="btn text-primary p-0 m-0" href="{% url 'clients:broker_page' %}">Daytrade</a></td>
+                    <td class="text-end"><a class="page-menu-link" href="{% url 'clients:broker_page' %}"><i
+                                class="bi bi-box-arrow-right btn text-primary p-0 m-0 "></a></i></td>
+                </tr>
+                <tr>
+                    <td class="text-muted">Swingtrade</td>
+                    <td class="text-end"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class="btn p-0 text-{% if not request.user.bankaccount.bank.name %}danger{% else %}primary{% endif %}" 
+                        data-bs-toggle="collapse" data-bs-target="#bank_data"
+                            aria-expanded="false" aria-controls="collapseExample"
+                            >
+                            Dados bancários
+                        </a>
+                    </td>
+                    <td class="text-end" data-bs-toggle="collapse" data-bs-target="#bank_data">
+                        <i class="bi bi-bank btn text-primary p-0 m-0"></i>
+                    </td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td>
+                        <a class="btn  p-0 m-0 text-decoration-none" href="{% url 'clients:products_page' %}">
+                        <span class="h5 text-success">Comece contratando um de nossos produtos</span></a>
+                    </td>
+                    <td class="text-end"><a class="text-decoration-none" href="{% url 'clients:products_page' %}"></a></td>
+                </tr>
+                {% endif %}
+            </body>
+        </table>
+
+        <div class="collapse" id="bank_data">
+            <div class=" pb-3 px-3">
+                <table class='table table-sm'>
+
+                    <body>
+                        <tr>
+                            {% if request.user.bankaccount.bank.name %}
+                            <td colspan="2">{{request.user.bankaccount.bank.name}}</td>
+                            {% else %}
+                            <td colspan="2"><span class="text-muted">Conta não cadastrada</span></td>
+                            {% endif %}
+                        </tr>
+                        <tr>
+                            <td class="">ISPB</td>
+                            <td class="text-end">{{request.user.bankaccount.bank.ispb|default:'-----'}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="">Agência</td>
+                            <td class="text-end">
+                                <span>{{request.user.bankaccount.branch|default:'-----'}}</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="">Conta</td>
+                            <td class="text-end">{{request.user.bankaccount.account|default:'-----'}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-secondary">SFWIT</td>
+                            <td class="text-end"></td>
+                        </tr>
+                    </body>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

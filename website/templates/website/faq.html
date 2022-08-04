@@ -1,0 +1,20 @@
+<div class="row m-0 p-0 bg-light">
+    <span class="h1 text-secondary pt-4 text-center mt-4"> {{faq.title}} </span>
+</div>
+<div class="row p-0 m-0 bg-light">
+    <div class="d-flex justify-content-center pt-4 pb-4 mb-4" >
+        <div style="min-width: 60%; max-width: 60%">
+            {% for item in faq.objects %}
+            <div class=" py-2">
+                <a class="d-flex text-decoration-none text-dark fw-bold m-0 p-0" data-bs-toggle="collapse"
+                    href="#id_question_{{item.pk}}" role="button" aria-expanded="false" aria-controls="collapseExample"">
+                    <div class="flex-grow-1">{{item.question}}</div> <i class="bi bi-caret-down-fill"></i>
+                </a>
+            </div>
+            <div class="collapse ps-2" id="id_question_{{item.pk}}">
+                {{item.answer|safe}}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

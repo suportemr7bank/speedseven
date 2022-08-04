@@ -1,0 +1,44 @@
+{% extends 'common/base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+
+<div class="d-flex justify-content-center align-items-center light" 
+      style="height: 100vh; background-image: url({% static 'website/login.jpg' %}); background-repeat: no-repeat; background-size: cover;">
+    
+    <div class="card login" style="max-width:800px; border-radius: 70px; padding: 20px; margin: 40px">
+      <div class="card-header bg-transparent border-0 text-center">
+        <span class='h1 text-black'>{{request.site.name}}</span>
+      </div>
+      <div class="card-body pt-4">
+
+        {% if acceptance_required and not term %}
+    
+          <p class="h2 text-secondary text-center">Cadastro indisponível</p>
+          <p class="h2 text-secondary text-center">Tente mais tarde</p>
+    
+        {% else %}
+    
+          <form method="POST" action="{% url 'account_signup' %}" autocomplete="off" id="id_signup_form" novalidate
+            data-accept-term="{{acceptance_required|yesno:'true,false'}}">
+            {% crispy form %}
+          </form>
+          <div class="card-footer bg-transparent border-0 m-0 p-0 ">
+            <div class="d-flex flex-row justify-content-center">
+              <button class="btn btn-success px-4 rounded-pill border-light" form="id_signup_form" id="id_signup_submit" type="submit"
+                disabled>Criar conta</button>
+            </div>
+          </div>
+    
+          {% endif %}
+      </div>
+    </div>
+
+</div>
+
+{% if acceptance_required and term %}
+{% include 'common/term_modal.html' %}
+{% endif %}
+
+{% endblock %}

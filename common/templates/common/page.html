@@ -1,0 +1,92 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="{% static 'website/favicon.png' %}" rel="apple-touch-icon" />
+    <link href="{% static 'website/favicon.png' %}" rel="icon" />
+
+    <link rel="stylesheet" href="{% static 'main.css' %}"> 
+
+    <title>{{request.site.name}}</title>
+
+    <style>
+        @page {
+            margin-bottom: 30mm !important;
+        }
+
+        @media print {
+            .noprint {
+                display: none;
+            }
+
+            .print {
+                display: block !important;
+                font-size: small;
+            }
+
+        }
+    </style>
+
+    <div id="page_style_id" class="page-content">
+        {% block extra_style %}
+        {% endblock %}
+    </div>
+
+</head>
+
+<body>
+
+    {% block theme_script %}
+    <script>
+        const body = document.getElementsByTagName("body")[0];
+        body.classList.add("{{request.theme}}");
+    </script>
+    {% endblock %}
+
+    {% block body %}
+    <div class="container-fluid p-0 m-0 position-realtive">
+
+        <div class="noprint">
+            {% block menu %}
+            {% if menu_template %}
+            {% include menu_template %}
+            {% endif %}
+            {% endblock %}
+        </div>
+
+        <div id="page_message_id" class="page-content">
+            {% block message %}
+            {% include 'common/messages.html' %}
+            {% endblock %}
+        </div>
+
+        <div id="page_content_id" class="page-content">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+    </div>
+    {% if socket_name %}
+    {{ socket_name|json_script:"id_socket_name" }}
+    {% endif %}
+    
+    {% endblock %}
+
+    <script src="{% static 'main.js' %}?{% now U %}" active="{{config.CORE_PAGE_CONTENT_RELOAD|yesno:'true,false'}}">
+    </script>
+
+    <div id="page_script_id" class="page-content">
+        {% block extra_scripts %}
+        {% endblock %}
+    </div>
+    
+</body>
+
+</html>

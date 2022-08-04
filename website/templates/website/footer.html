@@ -1,0 +1,111 @@
+{% load static %}
+
+
+{% if not company.fix_disclaimer_end %}
+<div class="d-flex fixed-bottom justify-content-center m-0 p-0" style="background-color: rgba(173, 173, 173, 0.4)"
+    onmouseover="this.style.background='rgba(173, 173, 173, 1)';"
+    onmouseout="this.style.background='rgba(173, 173, 173, 0.4)';">
+    <div class="text-center w-100">
+        <p class="m-0 p-2 text-black" style="font-size: 0.85rem;">{{company.disclaimer|safe}}</p>
+    </div>
+</div>
+{% endif %}
+
+
+<div class="row pt-4 mt-4 pb-4 px-0 mx-0 bg-white">
+    <div class="col-12">
+        <div class="d-flex justify-content-center">
+            <div class="row p-0 m-0" style="max-width: 85%">
+
+                <div class="col-md-4 pb-4 px-2 d-flex justify-content-md-start justify-content-center">
+                    <div>
+                        {% if company.logo %}
+                        <div class="text-center mb-2">
+                            <img src="{{ company.logo.url }}" width="45px">
+                        </div>
+                        {% endif %}
+                        <p class="fw-bold"> SIGA NOSSAS REDES </p>
+                        <div class="d-flex justify-content-around" style="font-size: 1.9rem;">
+                            {% if company.facebook_link %}
+                            <a href="{{company.facebook_url}}" class="text-decoration-none text-dark"><i class="bi bi-facebook"></i></a>
+                            {% endif %}
+
+                            {% if company.linkedin_link %}
+                            <a href="{{company.linkedin_url}}" class="text-decoration-none text-dark"><i class="bi bi-linkedin"></i></a>
+                            {% endif %}
+
+                            {% if company.instagram_link %}
+                            <a href="{{company.instagram_url}}" class="text-decoration-none text-dark"><i class="bi bi-instagram"></i></a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 pb-4 px-2 d-flex justify-content-md-center justify-content-center">
+                    <div>
+                        <div class="fw-bold"> PRECISA DE AJUDA </div>
+                        <p class="text-primary"><a href="mailto:{{company.contact_email}}">{{company.contact_email}}</a>
+                        </p>
+                        <div class="fw-bold"> TERMOS </div>
+                        <div><a href="{% url 'website:term_page' 'termo-de-uso' %}" class="text-secondary text-decoration-none">Termos de uso</a></div>
+                        <div><a href="{% url 'website:term_page' 'politica-de-privacidade' %}" class="text-secondary text-decoration-none">Política de privacidade</a></div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex  px-2 justify-content-md-end justify-content-center">
+                    <div>
+                        <div class="d-none d-md-block">
+                            <div class="fw-bold"> FALE COM A GENTE </div>
+                            <div>Atendimento</div>
+                            {% if company.support_email %}
+                            <p class="text-primary">
+                                <a href="mailto:{{company.support_email}}">{{company.support_email}}</a>
+                            </p>
+                            {% endif %}
+                            <div>Contato</div>
+                            {% if company.support_phone %}
+                            <div>{{company.support_phone}}</div>
+                            {% endif %}
+                            <p class="pt-2" style="font-size: .8em; text-align:justify; max-width: 200px">
+                                <strong> Não ligamos para você por esse telefone</strong>, também não solicitamos dados
+                                pessoais, senha de conta e código de transação por telefone. Estes números são somente
+                                para você fazer ligações para {{request.site.name}}.
+                            </p>
+                        </div>
+
+                        <div class="d-block d-md-none">
+                            <div class="d-flex justify-content-center">
+                                <div class="pb-4">
+                                    <div class="fw-bold"> FALE COM A GENTE </div>
+                                    <div>Atendimento</div>
+                                    {% if company.support_email %}
+                                    <p class="text-primary">
+                                        <a href="mailto:{{company.support_email}}">{{company.support_email}}</a>
+                                    </p>
+                                    {% endif %}
+                                    <div>Contato</div>
+                                    {% if company.support_phone %}
+                                    <div>{{company.support_phone}}</div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <p class="pt-2 " style="font-size: .8em; text-align:justify;">
+                                <strong> Não ligamos para você por esse telefone</strong>, também não solicitamos dados
+                                pessoais, senha de conta e código de transação por telefone. Estes números são somente
+                                para você fazer ligações para {{request.site.name}}.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {% if company.fix_disclaimer_end %}
+                <div class="d-flex bg-white justify-content-center m-0 p-0">
+                    <div class="text-center w-100">
+                        <p class="m-0 p-0 text-secondary" style="font-size: 1em;">{{company.disclaimer|safe}}</p>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

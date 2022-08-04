@@ -1,0 +1,48 @@
+{% load common_tags %}
+<div class="card">
+    <div class="card-body m-0 p-2">
+        <div class="row">
+            {% if request.user.client.approved and bank_account.approved %} 
+                <div class="col-6 dropdown">
+                        <a class="btn btn-secondary w-100 mb-2 dropdown-toggle" href="#" role="button" id="dropdownWithdraw" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resgate
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownDeposit">
+                        {% for withdraw in operations.withdraw %}
+                            <li><a class="dropdown-item" href="{% url 'clients:withdraw_create' withdraw.application_account_id %}">{{withdraw.product}}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="col-6 dropdown">
+                        <a class="btn btn-success w-100 mb-2 dropdown-toggle" href="#" role="button" id="dropdownDeposit" data-bs-toggle="dropdown" aria-expanded="false">
+                            Aporte
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownWithdraw">
+                        {% for deposit in operations.deposit %}
+                            <li><a class="dropdown-item" href="{% url 'clients:deposit_create' deposit.application_account_id %}">{{deposit.product}}</a></li>
+                            {% endfor %}
+                        </ul>
+                </div>
+            {% else %}
+                <div class="col">
+                    {% if not request.user.client.approved %}
+                    <p>Você solicitou uma modificação em seu <strong>cadastro</strong>. As operações de aporte e resgate estarão disponíveis após aprovação.</p>
+                    <a href="{% url 'clients:client_update' %}" class="btn btn-success w-100">
+                        Consultar cadastro
+                    </a>
+                    {% elif not bank_account %}
+                    <p>Cadastre sua <strong>conta bancária principal</strong>. As operações de aporte e resgate estarão disponíveis após aprovação.</p>
+                    <a href="{% url 'clients:bank_account_list' %}" class="btn btn-success w-100">
+                        Dados bancários
+                    </a>
+                    {% elif not bank_account.approved %}
+                    <p>Seus dados bancários estão aguardando aprovação. As operações de aporte e resgate estarão disponíveis após aprovação.</p>
+                    <a href="{% url 'clients:bank_account_list' %}" class="btn btn-success w-100">
+                        Dados bancários
+                    </a>
+                    {% endif %}        
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

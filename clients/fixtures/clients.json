@@ -1,0 +1,27 @@
+[
+    {
+        "model": "clients.client",
+        "pk": 1,
+        "fields": {
+            "user": 2,
+            "type": "PF",
+            "birth_date": "2000-05-01",
+            "cpf": "123.456.789-10",
+            "cnpj": null,
+            "company_name": null,
+            "phone": "(16) 3333-3333",
+            "address": "Avenida Presidente Vargas",
+            "number": "10",
+            "complement": null,
+            "zip_code": "14025-700",
+            "city": "Ribeirão Preto",
+            "state": "SP",
+            "politically_exposed": false,
+            "rg_cnh": "private/uploads/clients/None/rc_aporte_OF2Uavn.png",
+            "company_agreement": "",
+            "address_proof": "private/uploads/clients/None/ap_aporte_VHmlN3k.png",
+            "date_created": "2000-05-01T00:00:00Z",
+            "operator": 1 
+        }
+    }
+]

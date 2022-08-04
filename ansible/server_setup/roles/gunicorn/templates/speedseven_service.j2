@@ -1,0 +1,10 @@
+[Unit]
+Description={{application_name}} gunicorn
+
+[Service]
+Restart=on-failure
+WorkingDirectory={{ gunicorn_project_path }}
+ExecStart={{ gunicorn_virtualenv_path }}/bin/gunicorn_start
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,26 @@
+[
+    {
+        "model": "pool_account.applicationsettings",
+        "pk": 1,
+        "fields": {
+            "application": 1,
+            "min_initial_deposit": 10000.0,
+            "min_deposit": 1000.0,
+            "deposit_term": 7,
+            "withdraw_account_term": 15,
+            "withdraw_income_term": 10,
+            "value_threshold": 1000000.0,
+            "withdraw_threshold_term": 20
+        }
+    },
+    {
+        "model": "pool_account.accountsettings",
+        "pk": 1,
+        "fields": {
+            "application_account": 1,
+            "custom_rate": null,
+            "min_initial_deposit": null,
+            "deposit_term": null
+        }
+    }
+]

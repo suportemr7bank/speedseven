@@ -1,0 +1,18 @@
+[
+    {
+        "model": "emailtemplates.emailtemplate",
+        "pk": 1,
+        "fields": {
+            "type": "Convite",
+            "prefix": "invitations/email/email_invite",
+            "subject_template": "Convite para {{site_name}}",
+            "subject_tags": "{{site_name}} - Nome do site",
+            "text_template": "Olá\r\nVocê, {{ email }}, foi convidado a se juntar a {{ site_name }}\r\nCaso queira prosseguir, acesse este {{invite_url}}",
+            "message_template": "<p>Ol&aacute;<br />Voc&ecirc;, {{ email }}, foi convidado a se juntar a {{ site_name }}<br />Caso queira prosseguir, acesse <a href=\"{{invite_url}}\" target=\"_blank\" rel=\"noopener\">este link</a>&nbsp;<br /><br /></p>",
+            "message_tags": "{{ email }} - Email do cliente\r\n{{ site_name }} - Nome do site\r\n{{ invite_url }} - Link do convite",
+            "date_created": "2022-07-19T13:39:53.292Z",
+            "date_modified": "2022-07-19T14:48:05.448Z",
+            "write_error": ""
+        }
+    }
+]

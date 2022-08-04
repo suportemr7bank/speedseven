@@ -1,0 +1,45 @@
+[
+    {
+        "model": "investment.bank",
+        "pk": 1,
+        "fields": {
+            "ispb": "0",
+            "code": "1",
+            "name": "Banco do Brasil S.A."
+        }
+    },
+    {
+        "model": "crowdfunding.applicationsettings",
+        "pk": 1,
+        "fields": {
+            "application": 2,
+            "fund_amount": 1000000.0,
+            "equity_interest": 10.0,
+            "min_deposit": 100000.0,
+            "state": "OP",
+            "limit_date": "2022-07-31",
+            "date_finished": null,
+            "last_notified_deposit": null,
+            "name": "Empresa X",
+            "cnpj": "123123123123",
+            "contact_email": "email@email.com",
+            "phone": "123123123123",
+            "bank": 1,
+            "bank_branch_number": 1234,
+            "bank_branch_digit": "1",
+            "account_number": 1234,
+            "account_digit": 1
+        }
+    },
+    {
+        "model": "crowdfunding.applicationdeposit",
+        "pk": 1,
+        "fields": {
+            "application_account": 3,
+            "date_created": "2022-07-04 19:33:44.691Z",
+            "date_completed": null,
+            "value": 100000.0,
+            "money_transfer": null
+        }
+    }
+]

@@ -1,0 +1,8 @@
+---
+django_secret_key: "{{ application_secret_key }}"
+django_settings_file: "{{ application_name }}.settings"
+django_database_url: "{{ application_db_env_url }}"
+django_allowed_hosts: "{{ application_allowed_hosts }}"
+django_admin_email: "{{ admin_email }}"
+django_admin_password: "{{ admin_password }}"
+django_project_path: "{{ project_path }}"

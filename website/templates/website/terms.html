@@ -1,0 +1,22 @@
+{% extends 'website/page.html' %}
+
+{% block body %}
+<div class="container-fluid m-0 p-0">
+    {% include 'website/menu.html' %}
+    <div class="card-body">
+        <div class="container-fluid m-0 p-0">
+            <div class="container noprint pt-4 pb-4">
+                <div class="d-flex flex-column justify-content-center bg-white text-black"
+                    style="padding: 5rem 5rem;">
+                    {% if object %}
+                    {{object.text|safe}}
+                    {% else %}
+                    <div class="h2 text-center">Documento não encontrado</div>
+                    {% endif %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

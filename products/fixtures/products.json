@@ -1,0 +1,74 @@
+[
+    {
+        "model": "products.product",
+        "pk": 1,
+        "fields": {
+            "name": "speedseven",
+            "display_text": "Speed 7",
+            "application": 1,
+            "date_created": "2022-05-06T12:11:29.107Z",
+            "briefing": "<table style=\"border-collapse: collapse; width: 100%;\" border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td style=\"width: 49.1877%;\">Aporte inical m&iacute;nimo</td>\r\n<td style=\"width: 49.1877%; text-align: right;\">R$1.000,00</td>\r\n</tr>\r\n<tr>\r\n<td style=\"width: 49.1877%;\">Aporte m&iacute;nimo</td>\r\n<td style=\"width: 49.1877%; text-align: right;\">R$500,00</td>\r\n</tr>\r\n<tr>\r\n<td style=\"width: 49.1877%;\">Taxa adm.</td>\r\n<td style=\"width: 49.1877%; text-align: right;\">5% a.a</td>\r\n</tr>\r\n<tr>\r\n<td style=\"width: 49.1877%;\">Perman&ecirc;ncia m&iacute;n.</td>\r\n<td style=\"width: 49.1877%; text-align: right;\">30 dias</td>\r\n</tr>\r\n<tr>\r\n<td style=\"width: 49.1877%;\">Liquidez</td>\r\n<td style=\"width: 49.1877%; text-align: right;\">D+5</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+            "info": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et ligula ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus feugiat ligula non interdum vehicula. Cras ullamcorper orci sem, et imperdiet orci finibus ac. Maecenas id leo at nulla vestibulum porttitor id quis mi. Vestibulum non dui purus. Maecenas convallis enim nec mauris tempor lacinia.</p>\r\n<p>Cras euismod euismod diam non cursus. Etiam eget placerat quam. Pellentesque vel neque lobortis, eleifend augue at, malesuada massa. Sed eu orci tristique sem aliquam gravida at a augue. Vivamus ut nunc nunc. Nunc tellus ipsum, rutrum ut sagittis vitae, congue a lorem. Phasellus at metus eget odio tempor aliquam.</p>\r\n<p>&nbsp;</p>\r\n<p><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"https://image.cnbcfm.com/api/v1/image/105947856-1559647346670vix_chart6.1559317838488.jpg?v=1559647520&amp;w=1600&amp;h=900\" alt=\"Chart explains why the May stock market drop not like December selling\" width=\"683\" height=\"384\" /></p>"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 2,
+        "fields": {
+            "name": "empresa_x",
+            "display_text": "Empresa X",
+            "application": 2,
+            "date_created": "2022-05-06T12:11:29.107Z",
+            "briefing": "<table style=\"border-collapse: collapse; width: 100%;\" border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td style=\"width: 49.1877%;\">Aporte inical m&iacute;nimo</td>\r\n<td style=\"width: 49.1877%; text-align: right;\">R$1.000,00</td>\r\n</tr>\r\n<tr>\r\n<td style=\"width: 49.1877%;\">Aporte m&iacute;nimo</td>\r\n<td style=\"width: 49.1877%; text-align: right;\">R$500,00</td>\r\n</tr>\r\n<tr>\r\n<td style=\"width: 49.1877%;\">Taxa adm.</td>\r\n<td style=\"width: 49.1877%; text-align: right;\">5% a.a</td>\r\n</tr>\r\n<tr>\r\n<td style=\"width: 49.1877%;\">Perman&ecirc;ncia m&iacute;n.</td>\r\n<td style=\"width: 49.1877%; text-align: right;\">30 dias</td>\r\n</tr>\r\n<tr>\r\n<td style=\"width: 49.1877%;\">Liquidez</td>\r\n<td style=\"width: 49.1877%; text-align: right;\">D+5</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+            "info": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et ligula ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus feugiat ligula non interdum vehicula. Cras ullamcorper orci sem, et imperdiet orci finibus ac. Maecenas id leo at nulla vestibulum porttitor id quis mi. Vestibulum non dui purus. Maecenas convallis enim nec mauris tempor lacinia.</p>\r\n<p>Cras euismod euismod diam non cursus. Etiam eget placerat quam. Pellentesque vel neque lobortis, eleifend augue at, malesuada massa. Sed eu orci tristique sem aliquam gravida at a augue. Vivamus ut nunc nunc. Nunc tellus ipsum, rutrum ut sagittis vitae, congue a lorem. Phasellus at metus eget odio tempor aliquam.</p>\r\n<p>&nbsp;</p>\r\n<p><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"https://image.cnbcfm.com/api/v1/image/105947856-1559647346670vix_chart6.1559317838488.jpg?v=1559647520&amp;w=1600&amp;h=900\" alt=\"Chart explains why the May stock market drop not like December selling\" width=\"683\" height=\"384\" /></p>"
+        }
+    },
+    {
+        "model": "products.agreementtemplate",
+        "pk": 1,
+        "fields": {
+            "name": "sp7",
+            "type": "PF",
+            "product": 1,
+            "display_text": "Contrato SP7",
+            "text": "<p>Contrato</p>",
+            "instruction": "",
+            "date_created": "2022-05-06T12:17:53.709Z",
+            "date_changed": "2022-05-20T19:23:57.382Z",
+            "term_unit": "M",
+            "term_value": null
+        }
+    },
+    {
+        "model": "products.agreementtemplate",
+        "pk": 2,
+        "fields": {
+            "name": "sp7",
+            "type": "PJ",
+            "product": 1,
+            "display_text": "Contrato SP7",
+            "text": "<p>Contrato</p>",
+            "instruction": "",
+            "date_created": "2022-05-06T12:18:48.884Z",
+            "date_changed": "2022-05-06T12:19:04.775Z",
+            "term_unit": "M",
+            "term_value": null
+        }
+    },
+    {
+        "model": "products.productpurchase",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "product": 1,
+            "application_account": 1,
+            "agreement_template": 1,
+            "agreement": "<p>Contrato</p>",
+            "auto_renew": false,
+            "date_purchased": "2022-05-28T19:51:38.597Z",
+            "date_expire": null,
+            "date_cancelled": null,
+            "notify_before_end": true
+        }
+    }
+]

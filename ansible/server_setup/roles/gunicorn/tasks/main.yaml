@@ -1,0 +1,60 @@
+---
+- name: Install gunicorn
+  pip:
+    name: gunicorn==20.1.0
+    virtualenv: "{{ gunicorn_virtualenv_path }}"
+
+- name: Create the Gunicorn script file
+  template: src=gunicorn_start.j2
+    dest={{ gunicorn_virtualenv_path }}/bin/gunicorn_start
+    owner={{ gunicorn_user }}
+    group={{ gunicorn_group }}
+    mode=0755
+    backup=yes
+  notify: Restart gunicorn service
+
+- name: Create the application log folder
+  file: path={{ gunicorn_log_file_dir }}
+    owner={{ gunicorn_user }}
+    group={{ gunicorn_group }}
+    mode=0774
+    state=directory
+
+- name: Check for an existing application access logfile
+  stat:
+    path: "{{ gunicorn_log_file_dir }}/{{ gunicorn_log_file_prefix }}_access.log"
+  register: p1
+
+- name: Create (or retain) the application access log file
+  file:
+    path: "{{ gunicorn_log_file_dir }}/{{ gunicorn_log_file_prefix }}_access.log"
+    owner: "{{ gunicorn_user }}"
+    group: "{{ gunicorn_group }}"
+    mode: 0664
+    state: '{{ "file" if  p1.stat.exists else "touch" }}'
+
+
+- name: Check for an existing application error logfile
+  stat:
+    path: "{{ gunicorn_log_file_dir }}/{{ gunicorn_log_file_prefix }}_error.log"
+  register: p2
+
+- name: Create (or retain) the application error log file
+  file:
+    path: "{{ gunicorn_log_file_dir }}/{{ gunicorn_log_file_prefix }}_error.log"
+    owner: "{{ gunicorn_user }}"
+    group: "{{ gunicorn_group }}"
+    mode: 0664
+    state: '{{ "file" if  p2.stat.exists else "touch" }}'
+
+- name: Copy service file
+  template:
+    src: "{{gunicorn_application_name}}_service.j2"
+    dest: /etc/systemd/system/{{gunicorn_application_name}}.service
+  notify: Restart gunicorn service
+
+- name: Start gunicorn service
+  systemd:
+    name: "{{gunicorn_application_name}}"
+    daemon_reload: yes
+    enabled: yes

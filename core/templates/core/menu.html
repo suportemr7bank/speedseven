@@ -1,0 +1,231 @@
+{% extends 'common/menu.html' %}
+
+
+{% block navigation_menu %}
+<li class="nav-item">
+    <a class="page-menu-link nav-link" aria-current="page" href="{% url 'core:start_page' %}">
+        <i class="bi bi-house"></i> Home
+    </a>
+</li>
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHelp" role="button"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-people"></i> Usuários
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdownHelp">
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'core:admin_list' %}"><i
+                    class="bi bi-person-badge"></i> Administradores</a>
+        </li>
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'core:user_list' %}">
+                <i class="bi bi-people"></i> Ativação e senha</a>
+        </li>
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'core:client_list' %}">
+                <i class="bi bi-people"></i> Clientes</a>
+        </li>
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'core:bank_account_list' %}"><i
+                    class="bi bi-pencil-square"></i> Dados bancários</a>
+        </li>
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'core:task_list' %}"><i
+                    class="bi bi-pencil-square"></i> Aprovações</a>
+        </li>
+    </ul>
+</li>
+
+{% if request.user.is_staff %}
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHelp" role="button"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-envelope"></i> Email
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdownHelp">
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'invitations:invitation_list' %}"><i
+                    class="bi bi-envelope-plus"></i>
+                Convites</a>
+        </li>
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'core:email_list' %}"><i
+                    class="bi bi-envelope-plus"></i>
+                Mensagens</a>
+        </li>
+        {% if config.ACCOUNT_ENABLE_INVITATION %}
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'emailtemplate:emailtemplate_list' %}"><i
+                    class="bi bi-file-text"></i>
+                Modelos</a>
+        </li>
+        {% endif %}
+    </ul>
+</li>
+{% endif %}
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHelp" role="button"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-cash-coin"></i> Produtos
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdownHelp">
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'products:category_list' %}">
+                <i class="bi bi-bag"></i> Categorias
+            </a>
+        </li>
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'products:product_list' %}">
+                <i class="bi bi-bag"></i> Produtos
+            </a>
+        </li>
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'products:category_document_list' %}">
+                <i class="bi bi-bag"></i> Documentos das categorias
+            </a>
+        </li>
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'products:product_purchase_list' %}">
+                <i class="bi bi-wallet"></i> Contratados
+            </a>
+        </li>
+    </ul>
+</li>
+
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHelp" role="button"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-cash-coin"></i> Investimentos
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdownHelp">
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'investment:applicationmodel_list' %}">
+                <i class="bi bi-wallet2"></i> Modelos de aplicação
+            </a>
+        </li>
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'investment:application_list' %}">
+                <i class="bi bi-wallet2"></i> Aplicações
+            </a>
+        </li>
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'investment:applicationaccount_list' %}">
+                <i class="bi bi-wallet2"></i> Contas dos clientes
+            </a>
+        </li>
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'investment:moneytransfer_list' %}">
+                <i class="bi bi-arrow-left-right"></i> Solicitações de transferência
+            </a>
+        </li>
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'investment:accop_schedule_list' %}">
+                <i class="bi bi-clock"></i> Agendamentos
+            </a>
+        </li>
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'investment:applicationop_list' %}">
+                <i class="bi bi-file-spreadsheet"></i> Extratos
+            </a>
+        </li>
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'investment:pool_account:income_operation_list' %}">
+                <i class="bi bi-file-spreadsheet"></i> Rendimentos
+            </a>
+        </li>
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHelp" role="button"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-cash-coin"></i> Perfís
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdownHelp">
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'products:profile_product_list' %}"><i
+                    class="bi bi-coin"></i> Perfís</a>
+        </li>
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'investorprofile:profile_test_list' %}"><i
+                    class="bi bi-clipboard"></i>
+                Testes de perfil</a>
+        </li>
+    </ul>
+</li>
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHelp" role="button"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-file-text"></i> Contratos
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdownHelp">
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'core:acceptance_term_list' %}"><i
+                    class="bi bi-file-text"></i> Termos de aceite</a>
+        </li>
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'products:agreement_list' %}"><i
+                    class="bi bi-file-text"></i> Produtos</a>
+        </li>
+    </ul>
+</li>
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHelp" role="button"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-gear"></i> Site
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdownHelp">
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'core:start_page_list' %}"><i
+                    class="bi bi-file-code"></i> Página inicial</a>
+        </li>
+        <li><hr class="dropdown-divider"></li>        
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'core:faq_config_list' %}"><i
+                    class="bi bi-question-circle-fill"></i> Páginas de ajuda</a>
+        </li>
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'core:faq_list' %}"><i
+                    class="bi bi-file-text"></i> Questões frequentes</a>
+        </li>
+    </ul>
+</li>
+
+{% if request.user.is_staff %}
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHelp" role="button"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-gear"></i> Configurações
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdownHelp">
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'core:company_list' %}"><i class="bi bi-building"></i>
+                Empresa</a>
+        </li>
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="/admin/constance/config/"><i class="bi bi-server"></i>
+                Adminitrativo</a>
+        </li>
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'accounts:api_access_list' %}"><i
+                    class="bi bi-gear"></i> Acesso à Api</a>
+        </li>
+    </ul>
+</li>
+{% endif %}
+
+{% endblock%}
+
+{% block user_profile %}
+{% if request.user.is_authenticated %}
+<li>
+    <a class="page-menu-link dropdown-item" href="{% url 'core:admin_update' request.user.pk %}">
+        <i class="bi bi-person-fill"></i> Perfil
+    </a>
+</li>
+{% endif %}
+{% endblock%}

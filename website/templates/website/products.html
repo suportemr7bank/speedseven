@@ -1,0 +1,61 @@
+{% extends 'common/base.html' %}
+{% load static %}
+
+{% block theme_script %}
+<script>
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.add('light');
+</script>
+{% endblock %}
+
+{% block body %}
+
+{% block menu %}
+{% include 'website/menu.html' %}
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid m-0 p-0">
+
+    {% include 'website/banner.html' %}
+
+    <div class="row m-0 p-0 mt-4 pt-4 mb-4">
+        <div class="col-12 text-center"><span class="h1 text-success" id="id_produtos"> Nossos produtos </span></div>
+    </div>
+
+    {% for product in products %}
+    <div class="row m-0 p-0 mb-4" id="product_{{product.id}}">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header fw-bold fs-3 rounded"> {{product.display_text}} </div>
+                <div class="card-body">
+                    <div class="overflow-hidden mb-2">
+                        {{product.info|safe}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="row m-0 p-0 my-4 py-4">
+    <div class="col mt-2">
+        <br>
+        {% if config.ACCOUNT_ENABLE_SIGNUP %}
+        <div class="row mt-4 mb-4">
+            <div class="col mt-2 mb-4 text-center">
+                <a href="{% url 'account_signup' %}"
+                    class="bg-success text-black p-3 mb-4 rounded-pill h4 text-decoration-none"> Abra sua conta</a>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+{% if disclaimer %}
+{% include 'website/disclaimer.html' %}
+{% endif %}
+
+{% endblock %}
+{% endblock %}

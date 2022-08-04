@@ -1,0 +1,5 @@
+{% if site_name_logo_url %}
+<a class="navbar-brand" href=""><img src="{{site_name_logo_url}}" height="25px"></a>
+{% elif request.site.name %}
+<a class="navbar-brand" href="">{{request.site.name}}</a>
+{% endif %}

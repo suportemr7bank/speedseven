@@ -1,0 +1,17 @@
+[Unit]
+Description={{application_name}} celery beat
+After=network.target
+
+[Service]
+Type=simple
+User={{celery_user}}
+Group={{celery_group}}
+EnvironmentFile=/etc/default/celeryd
+WorkingDirectory={{celery_work_dir}}
+ExecStart=/bin/sh -c '${CELERY_BIN} -A ${CELERY_APP} beat  \
+    --pidfile=${CELERYBEAT_PID_FILE} \
+    --logfile=${CELERYBEAT_LOG_FILE} --loglevel=${CELERYD_LOG_LEVEL}'
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,39 @@
+{% extends 'common/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container-fluid p-0 m-0 position-relative">
+    <div class="card m-2">
+        <div class="card-header">
+            <div class="h2 text-success pb-2"> {{title}}</div>
+            {% if header_message %}
+            <div class="text-secondary pb-2"> {{header_message|safe}}</div>
+            {% endif %}
+        </div>
+
+        <form method="post" autocomplete="off" novalidate id="form_id">
+            <div class="card-body">
+                {% crispy form %}
+                {{ formset.management_form|crispy }}
+                {% for formset in inlines %}
+                    {% crispy formset formset_helper %}
+                {% endfor %}
+            </div>
+        </form>
+        <div class="card-footer bg-transparent">
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-end">
+                {% block buttons %}
+                {% for control in controls %}
+                {% if control.control_type == 'button' %}
+                <button type="submit" form="form_id" name="{{control.name}}" value="{{control.value}}"" class=" btn
+                    btn-{{control.color}}">{{control.text}}</button>
+                {% elif control.control_type == 'link' and control.value %}
+                <a class="btn btn-{{control.color}}" href="{{control.value}}">{{control.text}}</a>
+                {% endif %}
+                {% endfor %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

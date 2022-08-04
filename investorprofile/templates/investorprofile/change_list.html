@@ -1,0 +1,7 @@
+{% extends "admin/change_list.html" %}
+{% block content %}
+<a href="{% url 'investorprofile:profile_test_list' %}" 
+    style="padding: 10px; display: inline; border: solid 1px; background-color: green; color:white " ><strong>Voltar para o site</strong></a>    
+<div style="display:block; height:10px"></div>
+{{block.super}}
+{% endblock %}

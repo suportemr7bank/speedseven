@@ -1,0 +1,105 @@
+{% extends 'common/menu.html' %}
+
+
+{% block navigation_menu %}
+<li class="nav-item me-auto">
+    <a class="page-menu-link nav-link btn" aria-current="page" href="{% url 'clients:start_page' %}">
+        <i class="bi bi-house"></i> Home
+    </a>
+</li>
+
+{% if signup_completed %}
+<li class="nav-item me-auto">
+    <a class="page-menu-link nav-link btn" href="{% url 'clients:products_page' %}">
+        <i class="bi bi-cash-coin"></i> Produtos
+    </a>
+</li>
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHelp" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        <i class="bi bi-search"></i> Consultas
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdownHelp">
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'clients:products_purchase_list' %}"><i
+                    class="bi bi-file-bar-graph"></i>
+                Meus investimentos
+            </a>
+        </li>
+
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'clients:operationsstatement_page' %}"><i
+                    class="bi bi-file-earmark-ruled"></i> Extratos
+            </a>
+        </li>
+
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'clients:moneytransfer_list' %}">
+                <i class="bi bi-file-bar-graph"></i> Trasferências
+            </a>
+        </li>
+
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'clients:report_page' %}">
+                <i class="bi bi-file-bar-graph"></i> Relatórios
+            </a>
+        </li>
+
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'clients:investor_profile_test_detail' %}">
+                <i class="bi bi-file-bar-graph"></i> Perfil de investimento
+            </a>
+        </li>
+
+    </ul>
+</li>
+
+{% comment %}
+<!-- Not used for a while -->
+<li class="nav-item me-auto">
+    <a class="page-menu-link nav-link btn" href="{% url 'clients:broker_page' %}">
+        <i class="bi bi-graph-up"></i>Broker
+    </a>
+</li>
+{% endcomment %}
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHelp" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        <i class="bi bi-question-circle"></i> Ajuda
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdownHelp">
+        <li><a class="page-menu-link  dropdown-item btn" href="{% url 'clients:help_page' %}"><i
+                    class="bi bi-envelope-exclamation"></i> Contato</a>
+        </li>
+        <li>
+            <a class="page-menu-link dropdown-item btn" href="{% url 'clients:acceptance_term_list' %}"><i
+                    class="bi bi-file-text"></i> Termos
+            </a>
+        </li>
+    </ul>
+
+</li>
+{% endif %}
+
+{% endblock%}
+
+
+{% block user_profile %}
+{% if request.user.is_authenticated %}
+    <li>
+        <a class="page-menu-link dropdown-item btn" href="{% url 'clients:client_update' %}">
+            <i class="bi bi-person-fill"></i> Dados pessoais
+        </a>
+    </li>
+
+    {% if request.user.client %}
+    <li>
+        <a class="page-menu-link dropdown-item btn" href="{% url 'clients:bank_account_list' %}">
+            <i class="bi bi-bank"></i> Dados bancários
+        </a>
+    </li>
+    {% endif %}
+{% endif %}
+{% endblock%}

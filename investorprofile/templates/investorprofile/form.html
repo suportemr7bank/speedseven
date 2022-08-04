@@ -1,0 +1,26 @@
+{% extends 'common/form.html' %}
+
+
+{% block message %}
+{% include 'common/message_modal.html' %}
+{% endblock %}
+    
+{% block left_buttons %}
+{% if enable_confirm %}
+<div class="form-check">
+    <input class="form-check-input check-unlock-button" data-button-value="save" type="checkbox" value="">
+    <label class="form-check-label" for="flexCheckDefault">
+        Quero que meu perfil seja recalculado
+    </label>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block extra_style %}
+<style>
+    .asteriskField {
+        display: none;
+    }
+</style>
+{% endblock %}
+

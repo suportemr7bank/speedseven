@@ -1,0 +1,41 @@
+{% extends 'common/base.html' %}
+{% load render_table from django_tables2 %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container-fluid mt-2">
+    <div class="card">
+        <div class="card-header">
+            <div class="h2 text-success pb-2"> {{title}}</div>
+            <div class="text-success pb-2"> {{header_message|safe}}</div>
+            {% block control %}
+                {% if controls or filter_form %}
+                    <form method="get">
+                        <div class="row">
+                            {% for item in controls %}
+                                {% for key, data in item.items %}
+                                    {% if key == 'link' %}
+                                    <div class="col-12 col-md-auto mb-3">
+                                        <a class="col-12 btn btn-success" href = "{% url data.url %}"> {{data.text}} </a>
+                                    </div>    
+                                    {% endif %}
+                                {% endfor %}
+                            {% endfor %}
+                            
+                            {% if filter_form %}
+                                {% crispy filter_form %}
+                            {% endif %}
+
+                        </div>
+                    </form>    
+                {% endif %}
+            {% endblock %}
+        </div>
+        <div class="card-body">
+            {% block table %}
+            {% render_table table %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+{% endblock %}

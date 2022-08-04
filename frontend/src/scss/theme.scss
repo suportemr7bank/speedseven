@@ -1,0 +1,216 @@
+.light {
+    --bg-color: white;
+    --input-bg: rgb(240, 240, 240);
+    --color: black;
+    --focus-color: rgb(50, 50, 50);
+    --input-border: solid 1px lightgrey;
+    --card-bg: rgb(250, 250, 250);
+    --picture-bg: rgb(240, 240, 240);
+    --color-success: #00da9c;
+    --color-text-disabled: #495057;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.dark {
+    --bg-color: black;
+    --color: rgb(212, 212, 212);
+    --input-bg: #495057;
+    --focus-color: white;
+    --input-border: none;
+    --card-bg: #262626ff;
+    --picture-bg: #495057;
+    --color-success: #00da9c;
+    --color-text-disabled: #495057;
+}
+
+.card {
+    padding: 20px;
+    background-color: var(--card-bg);
+    color: var(--color);
+    border-radius: 10px;
+}
+
+.card-boby {
+    background-color: var(--card-bg);
+    color: var(--color);
+}
+
+.col-form-label {
+    color: var(--color);
+}
+
+span {
+    color: var(--color);
+}
+
+.h1 {
+    color: var(--color);
+}
+
+.user-picture {
+    width: 110px;
+    height: 110px;
+    border-radius: 55px;
+    background-color: var(--picture-bg);
+}
+
+.form-select {
+    background-color: var(--input-bg);
+    color: var(--color);
+    border: var(--input-border);
+}
+
+.form-control {
+    background-color: var(--input-bg) !important;
+    color: var(--color);
+    border: var(--input-border);
+}
+
+.input-group-text {
+    background-color: var(--input-bg) !important;
+    color: var(--color);
+    border: var(--input-border);
+}
+
+input:focus {
+    color: var(--focus-color) !important;
+}
+
+textarea:focus {
+    color: var(--focus-color) !important;
+}
+
+
+#login_form input:focus {
+    color: black !important;
+}
+
+.apexcharts-canvas {
+    background-color: var(--card-bg);
+}
+
+.list-group-item {
+    background-color: var(--card-bg);
+    color: var(--color);
+}
+
+th a {
+    color: var(--color-success);
+    text-decoration: none;
+}
+
+td i {
+    color: var(--color-success);
+}
+
+.login input {
+    background-color: transparent !important;
+    border: none;
+    border-bottom: solid black 1px;
+    border-radius: 0px;
+    margin-bottom: 2rem;
+    color: #495057;
+}
+
+.login {
+    min-height: 400px;
+    border-radius: 70px;
+    color: black;
+    border-color: #495057;
+    min-width: 350px;
+    max-width: 350px;
+}
+
+.login .alert {
+    background-color: #e9ecef;
+    border: none;
+}
+
+.login .alert ul {
+    list-style: none;
+}
+
+.product-info::-webkit-scrollbar {
+    width: 15px;
+}
+
+.product-info::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(200, 200, 200, 1);
+    border-radius: 10px;
+}
+
+.product-info::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #00da9c;
+    -webkit-box-shadow: inset 0 0 6px rgba(90, 90, 90, 0.7);
+}
+
+select:disabled {
+    color: var(--color-text-disabled);
+    background-color: var();
+}
+
+
+// Select 2 customization
+
+.select2 {
+    width: 100% !important;
+}
+
+
+.select2-container--default .select2-selection--single {
+    border: var(--input-border) !important;
+}
+
+.select2-selection--single {
+    height: 36px !important;
+    background-color: var(--input-bg) !important;
+    padding-left: 4px;
+    .select2-selection__rendered {
+        border: none;
+        height: 100% !important;
+        color: var(--color) !important;
+        padding-top: 4px;
+    }
+}
+
+.select2-search--dropdown {
+    .select2-search__field:focus-within {
+        color: var(--bs-gray-800) !important;
+    }
+}
+
+
+// tinymce adjust for theme
+
+.tox-dialog input {
+    color: #222f3e !important;
+}
+
+.tox-dialog textarea {
+    color: #222f3e !important;
+}
+
+
+// django-table2
+
+ul.pagination li a {
+    margin: 0px 2px;
+    color: var(--color-success);
+}
+
+ul.pagination li.active a {
+    margin: 0px 4px;
+    font-weight: bold;
+    color: var(--color-success);
+}
+
+
+// Select to adust to color theme
+
+li.select2-results__option {
+    color: black;
+}

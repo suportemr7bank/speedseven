@@ -1,0 +1,12 @@
+<div class="dropdown dropend" style="position: absolute;">
+    <a class="" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-three-dots"></i>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="{% url 'investment:deposit_request_create' record.pk %}"><i class="bi bi-download pe-2"></i>Solicitação de aporte</a></li>
+        <li><a class="dropdown-item" href="{% url 'investment:withdraw_request_create' record.pk %}"><i class="bi bi-upload pe-2"></i>Solicitação de resgate</a></li>
+        <li><a class="dropdown-item" href="{% url 'investment:deposit_create' record.pk %}"><i class="bi bi-download pe-2"></i>Aporte direto</a></li>
+        <li><a class="dropdown-item" href="{% url 'investment:withdraw_create' record.pk %}"><i class="bi bi-upload pe-2"></i>Retirada direta</a></li>
+        <li><a class="dropdown-item" href="{% url 'investment:application_close' record.pk %}"><i class="bi bi-x-circle pe-2 text-danger"></i> Encerrar</a></li>
+    </ul>
+</div>

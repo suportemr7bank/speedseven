@@ -1,0 +1,2873 @@
+[
+    {
+        "model": "investment.bank",
+        "pk": 1,
+        "fields": {
+            "ispb": "0",
+            "code": "1",
+            "name": "Banco do Brasil S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 2,
+        "fields": {
+            "ispb": "4902979",
+            "code": "3",
+            "name": "BANCO DA AMAZONIA S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 3,
+        "fields": {
+            "ispb": "7237373",
+            "code": "4",
+            "name": "Banco do Nordeste do Brasil S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 4,
+        "fields": {
+            "ispb": "33657248",
+            "code": "7",
+            "name": "BANCO NACIONAL DE DESENVOLVIMENTO ECONOMICO E SOCIAL"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 5,
+        "fields": {
+            "ispb": "81723108",
+            "code": "10",
+            "name": "CREDICOAMO CREDITO RURAL COOPERATIVA"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 6,
+        "fields": {
+            "ispb": "61809182",
+            "code": "11",
+            "name": "CREDIT SUISSE HEDGING-GRIFFO CORRETORA DE VALORES S.A"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 7,
+        "fields": {
+            "ispb": "4866275",
+            "code": "12",
+            "name": "Banco Inbursa S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 8,
+        "fields": {
+            "ispb": "9274232",
+            "code": "14",
+            "name": "STATE STREET BRASIL S.A. - BANCO COMERCIAL"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 9,
+        "fields": {
+            "ispb": "2819125",
+            "code": "15",
+            "name": "UBS Brasil Corretora de Câmbio, Títulos e Valores Mobiliários S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 10,
+        "fields": {
+            "ispb": "4715685",
+            "code": "16",
+            "name": "COOPERATIVA DE CRÉDITO MÚTUO DOS DESPACHANTES DE TRÂNSITO DE SANTA CATARINA E RI"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 11,
+        "fields": {
+            "ispb": "42272526",
+            "code": "17",
+            "name": "BNY Mellon Banco S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 12,
+        "fields": {
+            "ispb": "57839805",
+            "code": "18",
+            "name": "Banco Tricury S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 13,
+        "fields": {
+            "ispb": "28127603",
+            "code": "21",
+            "name": "BANESTES S.A. BANCO DO ESTADO DO ESPIRITO SANTO"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 14,
+        "fields": {
+            "ispb": "10866788",
+            "code": "24",
+            "name": "Banco Bandepe S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 15,
+        "fields": {
+            "ispb": "3323840",
+            "code": "25",
+            "name": "Banco Alfa S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 16,
+        "fields": {
+            "ispb": "33885724",
+            "code": "29",
+            "name": "Banco Itaú Consignado S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 17,
+        "fields": {
+            "ispb": "90400888",
+            "code": "33",
+            "name": "BANCO SANTANDER (BRASIL) S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 18,
+        "fields": {
+            "ispb": "6271464",
+            "code": "36",
+            "name": "Banco Bradesco BBI S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 19,
+        "fields": {
+            "ispb": "4913711",
+            "code": "37",
+            "name": "Banco do Estado do Pará S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 20,
+        "fields": {
+            "ispb": "3609817",
+            "code": "40",
+            "name": "Banco Cargill S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 21,
+        "fields": {
+            "ispb": "92702067",
+            "code": "41",
+            "name": "Banco do Estado do Rio Grande do Sul S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 22,
+        "fields": {
+            "ispb": "13009717",
+            "code": "47",
+            "name": "Banco do Estado de Sergipe S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 23,
+        "fields": {
+            "ispb": "4913129",
+            "code": "60",
+            "name": "Confidence Corretora de Câmbio S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 24,
+        "fields": {
+            "ispb": "3012230",
+            "code": "62",
+            "name": "Hipercard Banco Múltiplo S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 25,
+        "fields": {
+            "ispb": "4184779",
+            "code": "63",
+            "name": "Banco Bradescard S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 26,
+        "fields": {
+            "ispb": "4332281",
+            "code": "64",
+            "name": "GOLDMAN SACHS DO BRASIL BANCO MULTIPLO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 27,
+        "fields": {
+            "ispb": "48795256",
+            "code": "65",
+            "name": "Banco AndBank (Brasil) S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 28,
+        "fields": {
+            "ispb": "2801938",
+            "code": "66",
+            "name": "BANCO MORGAN STANLEY S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 29,
+        "fields": {
+            "ispb": "61033106",
+            "code": "69",
+            "name": "Banco Crefisa S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 30,
+        "fields": {
+            "ispb": "208",
+            "code": "70",
+            "name": "BRB - BANCO DE BRASILIA S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 31,
+        "fields": {
+            "ispb": "3017677",
+            "code": "74",
+            "name": "Banco J. Safra S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 32,
+        "fields": {
+            "ispb": "3532415",
+            "code": "75",
+            "name": "Banco ABN Amro S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 33,
+        "fields": {
+            "ispb": "7656500",
+            "code": "76",
+            "name": "Banco KDB do Brasil S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 34,
+        "fields": {
+            "ispb": "416968",
+            "code": "77",
+            "name": "Banco Inter S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 35,
+        "fields": {
+            "ispb": "34111187",
+            "code": "78",
+            "name": "Haitong Banco de Investimento do Brasil S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 36,
+        "fields": {
+            "ispb": "9516419",
+            "code": "79",
+            "name": "Banco Original do Agronegócio S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 37,
+        "fields": {
+            "ispb": "73622748",
+            "code": "80",
+            "name": "B&T CORRETORA DE CAMBIO LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 38,
+        "fields": {
+            "ispb": "10264663",
+            "code": "81",
+            "name": "BancoSeguro S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 39,
+        "fields": {
+            "ispb": "7679404",
+            "code": "82",
+            "name": "BANCO TOPÁZIO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 40,
+        "fields": {
+            "ispb": "10690848",
+            "code": "83",
+            "name": "Banco da China Brasil S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 41,
+        "fields": {
+            "ispb": "2398976",
+            "code": "84",
+            "name": "UNIPRIME DO BRASIL - COOPERATIVA DE CRéDITO LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 42,
+        "fields": {
+            "ispb": "5463212",
+            "code": "85",
+            "name": "Cooperativa Central de Crédito - Ailos"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 43,
+        "fields": {
+            "ispb": "11476673",
+            "code": "88",
+            "name": "BANCO RANDON S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 44,
+        "fields": {
+            "ispb": "62109566",
+            "code": "89",
+            "name": "CREDISAN COOPERATIVA DE CRÉDITO"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 45,
+        "fields": {
+            "ispb": "12865507",
+            "code": "92",
+            "name": "BRK S.A. Crédito, Financiamento e Investimento"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 46,
+        "fields": {
+            "ispb": "7945233",
+            "code": "93",
+            "name": "PÓLOCRED   SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESA DE PEQUENO PORT"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 47,
+        "fields": {
+            "ispb": "11758741",
+            "code": "94",
+            "name": "Banco Finaxis S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 48,
+        "fields": {
+            "ispb": "11703662",
+            "code": "95",
+            "name": "Travelex Banco de Câmbio S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 49,
+        "fields": {
+            "ispb": "997185",
+            "code": "96",
+            "name": "Banco B3 S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 50,
+        "fields": {
+            "ispb": "4632856",
+            "code": "97",
+            "name": "Credisis - Central de Cooperativas de Crédito Ltda."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 51,
+        "fields": {
+            "ispb": "78157146",
+            "code": "98",
+            "name": "Credialiança Cooperativa de Crédito Rural"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 52,
+        "fields": {
+            "ispb": "3046391",
+            "code": "99",
+            "name": "UNIPRIME CENTRAL - CENTRAL NACIONAL DE COOPERATIVA DE CRÉDITO LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 53,
+        "fields": {
+            "ispb": "806535",
+            "code": "100",
+            "name": "Planner Corretora de Valores S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 54,
+        "fields": {
+            "ispb": "62287735",
+            "code": "101",
+            "name": "RENASCENCA DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 55,
+        "fields": {
+            "ispb": "2332886",
+            "code": "102",
+            "name": "XP INVESTIMENTOS CORRETORA DE CÂMBIO,TÍTULOS E VALORES MOBILIÁRIOS S/A"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 56,
+        "fields": {
+            "ispb": "360305",
+            "code": "104",
+            "name": "CAIXA ECONOMICA FEDERAL"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 57,
+        "fields": {
+            "ispb": "7652226",
+            "code": "105",
+            "name": "Lecca Crédito, Financiamento e Investimento S/A"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 58,
+        "fields": {
+            "ispb": "15114366",
+            "code": "107",
+            "name": "Banco Bocom BBM S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 59,
+        "fields": {
+            "ispb": "1800019",
+            "code": "108",
+            "name": "PORTOCRED S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTO"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 60,
+        "fields": {
+            "ispb": "36113876",
+            "code": "111",
+            "name": "OLIVEIRA TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIARIOS S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 61,
+        "fields": {
+            "ispb": "61723847",
+            "code": "113",
+            "name": "NEON CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 62,
+        "fields": {
+            "ispb": "5790149",
+            "code": "114",
+            "name": "Central Cooperativa de Crédito no Estado do Espírito Santo - CECOOP"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 63,
+        "fields": {
+            "ispb": "92856905",
+            "code": "117",
+            "name": "ADVANCED CORRETORA DE CÂMBIO LTDA"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 64,
+        "fields": {
+            "ispb": "13720915",
+            "code": "119",
+            "name": "Banco Western Union do Brasil S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 65,
+        "fields": {
+            "ispb": "33603457",
+            "code": "120",
+            "name": "BANCO RODOBENS S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 66,
+        "fields": {
+            "ispb": "10664513",
+            "code": "121",
+            "name": "Banco Agibank S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 67,
+        "fields": {
+            "ispb": "33147315",
+            "code": "122",
+            "name": "Banco Bradesco BERJ S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 68,
+        "fields": {
+            "ispb": "15357060",
+            "code": "124",
+            "name": "Banco Woori Bank do Brasil S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 69,
+        "fields": {
+            "ispb": "45246410",
+            "code": "125",
+            "name": "BANCO GENIAL S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 70,
+        "fields": {
+            "ispb": "13220493",
+            "code": "126",
+            "name": "BR Partners Banco de Investimento S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 71,
+        "fields": {
+            "ispb": "9512542",
+            "code": "127",
+            "name": "Codepe Corretora de Valores e Câmbio S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 72,
+        "fields": {
+            "ispb": "19307785",
+            "code": "128",
+            "name": "MS Bank S.A. Banco de Câmbio"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 73,
+        "fields": {
+            "ispb": "18520834",
+            "code": "129",
+            "name": "UBS Brasil Banco de Investimento S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 74,
+        "fields": {
+            "ispb": "9313766",
+            "code": "130",
+            "name": "CARUANA S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 75,
+        "fields": {
+            "ispb": "61747085",
+            "code": "131",
+            "name": "TULLETT PREBON BRASIL CORRETORA DE VALORES E CÂMBIO LTDA"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 76,
+        "fields": {
+            "ispb": "17453575",
+            "code": "132",
+            "name": "ICBC do Brasil Banco Múltiplo S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 77,
+        "fields": {
+            "ispb": "10398952",
+            "code": "133",
+            "name": "CONFEDERAÇÃO NACIONAL DAS COOPERATIVAS CENTRAIS DE CRÉDITO E ECONOMIA FAMILIAR E"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 78,
+        "fields": {
+            "ispb": "33862244",
+            "code": "134",
+            "name": "BGC LIQUIDEZ DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 79,
+        "fields": {
+            "ispb": "315557",
+            "code": "136",
+            "name": "CONFEDERAÇÃO NACIONAL DAS COOPERATIVAS CENTRAIS UNICRED LTDA. - UNICRED DO BRASI"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 80,
+        "fields": {
+            "ispb": "10853017",
+            "code": "138",
+            "name": "Get Money Corretora de Câmbio S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 81,
+        "fields": {
+            "ispb": "55230916",
+            "code": "139",
+            "name": "Intesa Sanpaolo Brasil S.A. - Banco Múltiplo"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 82,
+        "fields": {
+            "ispb": "62169875",
+            "code": "140",
+            "name": "NU INVEST CORRETORA DE VALORES S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 83,
+        "fields": {
+            "ispb": "16944141",
+            "code": "142",
+            "name": "Broker Brasil Corretora de Câmbio Ltda."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 84,
+        "fields": {
+            "ispb": "2992317",
+            "code": "143",
+            "name": "Treviso Corretora de Câmbio S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 85,
+        "fields": {
+            "ispb": "13059145",
+            "code": "144",
+            "name": "BEXS BANCO DE CÂMBIO S/A"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 86,
+        "fields": {
+            "ispb": "50579044",
+            "code": "145",
+            "name": "LEVYCAM - CORRETORA DE CAMBIO E VALORES LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 87,
+        "fields": {
+            "ispb": "24074692",
+            "code": "146",
+            "name": "GUITTA CORRETORA DE CAMBIO LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 88,
+        "fields": {
+            "ispb": "15581638",
+            "code": "149",
+            "name": "Facta Financeira S.A. - Crédito Financiamento e Investimento"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 89,
+        "fields": {
+            "ispb": "9105360",
+            "code": "157",
+            "name": "ICAP do Brasil Corretora de Títulos e Valores Mobiliários Ltda."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 90,
+        "fields": {
+            "ispb": "5442029",
+            "code": "159",
+            "name": "Casa do Crédito S.A. Sociedade de Crédito ao Microempreendedor"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 91,
+        "fields": {
+            "ispb": "23522214",
+            "code": "163",
+            "name": "Commerzbank Brasil S.A. - Banco Múltiplo"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 92,
+        "fields": {
+            "ispb": "13486793",
+            "code": "173",
+            "name": "BRL Trust Distribuidora de Títulos e Valores Mobiliários S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 93,
+        "fields": {
+            "ispb": "43180355",
+            "code": "174",
+            "name": "PEFISA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 94,
+        "fields": {
+            "ispb": "65913436",
+            "code": "177",
+            "name": "Guide Investimentos S.A. Corretora de Valores"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 95,
+        "fields": {
+            "ispb": "2685483",
+            "code": "180",
+            "name": "CM CAPITAL MARKETS CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS LTDA"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 96,
+        "fields": {
+            "ispb": "9210106",
+            "code": "183",
+            "name": "SOCRED S.A. - SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESA DE PEQUENO P"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 97,
+        "fields": {
+            "ispb": "17298092",
+            "code": "184",
+            "name": "Banco Itaú BBA S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 98,
+        "fields": {
+            "ispb": "33775974",
+            "code": "188",
+            "name": "ATIVA INVESTIMENTOS S.A. CORRETORA DE TÍTULOS, CÂMBIO E VALORES"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 99,
+        "fields": {
+            "ispb": "7512441",
+            "code": "189",
+            "name": "HS FINANCEIRA S/A CREDITO, FINANCIAMENTO E INVESTIMENTOS"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 100,
+        "fields": {
+            "ispb": "3973814",
+            "code": "190",
+            "name": "SERVICOOP - COOPERATIVA DE CRÉDITO DOS SERVIDORES PÚBLICOS ESTADUAIS E MUNICIPAI"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 101,
+        "fields": {
+            "ispb": "4257795",
+            "code": "191",
+            "name": "Nova Futura Corretora de Títulos e Valores Mobiliários Ltda."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 102,
+        "fields": {
+            "ispb": "20155248",
+            "code": "194",
+            "name": "PARMETAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 103,
+        "fields": {
+            "ispb": "7799277",
+            "code": "195",
+            "name": "VALOR SOCIEDADE DE CRÉDITO DIRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 104,
+        "fields": {
+            "ispb": "32648370",
+            "code": "196",
+            "name": "FAIR CORRETORA DE CAMBIO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 105,
+        "fields": {
+            "ispb": "16501555",
+            "code": "197",
+            "name": "STONE INSTITUIÇÃO DE PAGAMENTO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 106,
+        "fields": {
+            "ispb": "30306294",
+            "code": "208",
+            "name": "Banco BTG Pactual S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 107,
+        "fields": {
+            "ispb": "92894922",
+            "code": "212",
+            "name": "Banco Original S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 108,
+        "fields": {
+            "ispb": "54403563",
+            "code": "213",
+            "name": "Banco Arbi S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 109,
+        "fields": {
+            "ispb": "91884981",
+            "code": "217",
+            "name": "Banco John Deere S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 110,
+        "fields": {
+            "ispb": "71027866",
+            "code": "218",
+            "name": "Banco BS2 S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 111,
+        "fields": {
+            "ispb": "75647891",
+            "code": "222",
+            "name": "BANCO CRÉDIT AGRICOLE BRASIL S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 112,
+        "fields": {
+            "ispb": "58616418",
+            "code": "224",
+            "name": "Banco Fibra S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 113,
+        "fields": {
+            "ispb": "62421979",
+            "code": "233",
+            "name": "Banco Cifra S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 114,
+        "fields": {
+            "ispb": "60746948",
+            "code": "237",
+            "name": "Banco Bradesco S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 115,
+        "fields": {
+            "ispb": "31597552",
+            "code": "241",
+            "name": "BANCO CLASSICO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 116,
+        "fields": {
+            "ispb": "33923798",
+            "code": "243",
+            "name": "BANCO MASTER S/A"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 117,
+        "fields": {
+            "ispb": "28195667",
+            "code": "246",
+            "name": "Banco ABC Brasil S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 118,
+        "fields": {
+            "ispb": "61182408",
+            "code": "249",
+            "name": "Banco Investcred Unibanco S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 119,
+        "fields": {
+            "ispb": "50585090",
+            "code": "250",
+            "name": "BCV - BANCO DE CRÉDITO E VAREJO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 120,
+        "fields": {
+            "ispb": "52937216",
+            "code": "253",
+            "name": "Bexs Corretora de Câmbio S/A"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 121,
+        "fields": {
+            "ispb": "14388334",
+            "code": "254",
+            "name": "PARANÁ BANCO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 122,
+        "fields": {
+            "ispb": "8609934",
+            "code": "259",
+            "name": "MONEYCORP BANCO DE CÂMBIO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 123,
+        "fields": {
+            "ispb": "18236120",
+            "code": "260",
+            "name": "NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 124,
+        "fields": {
+            "ispb": "33644196",
+            "code": "265",
+            "name": "Banco Fator S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 125,
+        "fields": {
+            "ispb": "33132044",
+            "code": "266",
+            "name": "BANCO CEDULA S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 126,
+        "fields": {
+            "ispb": "14511781",
+            "code": "268",
+            "name": "BARI COMPANHIA HIPOTECÁRIA"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 127,
+        "fields": {
+            "ispb": "53518684",
+            "code": "269",
+            "name": "BANCO HSBC S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 128,
+        "fields": {
+            "ispb": "61444949",
+            "code": "270",
+            "name": "Sagitur Corretora de Câmbio Ltda."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 129,
+        "fields": {
+            "ispb": "27842177",
+            "code": "271",
+            "name": "IB Corretora de Câmbio, Títulos e Valores Mobiliários S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 130,
+        "fields": {
+            "ispb": "250699",
+            "code": "272",
+            "name": "AGK CORRETORA DE CAMBIO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 131,
+        "fields": {
+            "ispb": "8253539",
+            "code": "273",
+            "name": "Cooperativa de Crédito Rural de São Miguel do Oeste - Sulcredi/São Miguel"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 132,
+        "fields": {
+            "ispb": "11581339",
+            "code": "274",
+            "name": "MONEY PLUS SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E A EMPRESA DE PEQUENO PORT"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 133,
+        "fields": {
+            "ispb": "11970623",
+            "code": "276",
+            "name": "BANCO SENFF S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 134,
+        "fields": {
+            "ispb": "27652684",
+            "code": "278",
+            "name": "Genial Investimentos Corretora de Valores Mobiliários S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 135,
+        "fields": {
+            "ispb": "26563270",
+            "code": "279",
+            "name": "COOPERATIVA DE CREDITO RURAL DE PRIMAVERA DO LESTE"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 136,
+        "fields": {
+            "ispb": "23862762",
+            "code": "280",
+            "name": "WILL FINANCEIRA S.A. CRÉDITO, FINANCIAMENTO E INVESTIMENTO"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 137,
+        "fields": {
+            "ispb": "76461557",
+            "code": "281",
+            "name": "Cooperativa de Crédito Rural Coopavel"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 138,
+        "fields": {
+            "ispb": "89960090",
+            "code": "283",
+            "name": "RB INVESTIMENTOS DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LIMITADA"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 139,
+        "fields": {
+            "ispb": "71677850",
+            "code": "285",
+            "name": "Frente Corretora de Câmbio Ltda."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 140,
+        "fields": {
+            "ispb": "7853842",
+            "code": "286",
+            "name": "COOPERATIVA DE CRÉDITO RURAL DE OURO   SULCREDI/OURO"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 141,
+        "fields": {
+            "ispb": "62237649",
+            "code": "288",
+            "name": "CAROL DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 142,
+        "fields": {
+            "ispb": "94968518",
+            "code": "289",
+            "name": "EFX CORRETORA DE CÂMBIO LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 143,
+        "fields": {
+            "ispb": "8561701",
+            "code": "290",
+            "name": "PAGSEGURO INTERNET INSTITUIÇÃO DE PAGAMENTO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 144,
+        "fields": {
+            "ispb": "28650236",
+            "code": "292",
+            "name": "BS2 Distribuidora de Títulos e Valores Mobiliários S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 145,
+        "fields": {
+            "ispb": "71590442",
+            "code": "293",
+            "name": "Lastro RDV Distribuidora de Títulos e Valores Mobiliários Ltda."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 146,
+        "fields": {
+            "ispb": "4062902",
+            "code": "296",
+            "name": "OZ CORRETORA DE CÂMBIO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 147,
+        "fields": {
+            "ispb": "17772370",
+            "code": "298",
+            "name": "Vip's Corretora de Câmbio Ltda."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 148,
+        "fields": {
+            "ispb": "4814563",
+            "code": "299",
+            "name": "BANCO SOROCRED S.A. - BANCO MÚLTIPLO"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 149,
+        "fields": {
+            "ispb": "33042151",
+            "code": "300",
+            "name": "Banco de la Nacion Argentina"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 150,
+        "fields": {
+            "ispb": "13370835",
+            "code": "301",
+            "name": "BPP Instituição de Pagamento S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 151,
+        "fields": {
+            "ispb": "40303299",
+            "code": "306",
+            "name": "PORTOPAR DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 152,
+        "fields": {
+            "ispb": "3751794",
+            "code": "307",
+            "name": "Terra Investimentos Distribuidora de Títulos e Valores Mobiliários Ltda."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 153,
+        "fields": {
+            "ispb": "14190547",
+            "code": "309",
+            "name": "CAMBIONET CORRETORA DE CÂMBIO LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 154,
+        "fields": {
+            "ispb": "22610500",
+            "code": "310",
+            "name": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 155,
+        "fields": {
+            "ispb": "76641497",
+            "code": "311",
+            "name": "DOURADA CORRETORA DE CÂMBIO LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 156,
+        "fields": {
+            "ispb": "7693858",
+            "code": "312",
+            "name": "HSCM - SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESA DE PEQUENO PORTE LT"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 157,
+        "fields": {
+            "ispb": "16927221",
+            "code": "313",
+            "name": "AMAZÔNIA CORRETORA DE CÂMBIO LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 158,
+        "fields": {
+            "ispb": "3502968",
+            "code": "315",
+            "name": "PI Distribuidora de Títulos e Valores Mobiliários S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 159,
+        "fields": {
+            "ispb": "61186680",
+            "code": "318",
+            "name": "Banco BMG S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 160,
+        "fields": {
+            "ispb": "11495073",
+            "code": "319",
+            "name": "OM DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 161,
+        "fields": {
+            "ispb": "7450604",
+            "code": "320",
+            "name": "China Construction Bank (Brasil) Banco Múltiplo S/A"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 162,
+        "fields": {
+            "ispb": "18188384",
+            "code": "321",
+            "name": "CREFAZ SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E A EMPRESA DE PEQUENO PORTE LT"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 163,
+        "fields": {
+            "ispb": "1073966",
+            "code": "322",
+            "name": "Cooperativa de Crédito Rural de Abelardo Luz - Sulcredi/Crediluz"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 164,
+        "fields": {
+            "ispb": "10573521",
+            "code": "323",
+            "name": "MERCADO PAGO INSTITUIÇÃO DE PAGAMENTO LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 165,
+        "fields": {
+            "ispb": "21332862",
+            "code": "324",
+            "name": "CARTOS SOCIEDADE DE CRÉDITO DIRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 166,
+        "fields": {
+            "ispb": "13293225",
+            "code": "325",
+            "name": "Órama Distribuidora de Títulos e Valores Mobiliários S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 167,
+        "fields": {
+            "ispb": "3311443",
+            "code": "326",
+            "name": "PARATI - CREDITO, FINANCIAMENTO E INVESTIMENTO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 168,
+        "fields": {
+            "ispb": "5841967",
+            "code": "328",
+            "name": "COOPERATIVA DE ECONOMIA E CRÉDITO MÚTUO DOS FABRICANTES DE CALÇADOS DE SAPIRANGA"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 169,
+        "fields": {
+            "ispb": "32402502",
+            "code": "329",
+            "name": "QI Sociedade de Crédito Direto S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 170,
+        "fields": {
+            "ispb": "556603",
+            "code": "330",
+            "name": "BANCO BARI DE INVESTIMENTOS E FINANCIAMENTOS S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 171,
+        "fields": {
+            "ispb": "13673855",
+            "code": "331",
+            "name": "Fram Capital Distribuidora de Títulos e Valores Mobiliários S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 172,
+        "fields": {
+            "ispb": "13140088",
+            "code": "332",
+            "name": "Acesso Soluções de Pagamento S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 173,
+        "fields": {
+            "ispb": "27098060",
+            "code": "335",
+            "name": "Banco Digio S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 174,
+        "fields": {
+            "ispb": "31872495",
+            "code": "336",
+            "name": "Banco C6 S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 175,
+        "fields": {
+            "ispb": "9554480",
+            "code": "340",
+            "name": "Super Pagamentos e Administração de Meios Eletrônicos S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 176,
+        "fields": {
+            "ispb": "60701190",
+            "code": "341",
+            "name": "ITAÚ UNIBANCO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 177,
+        "fields": {
+            "ispb": "32997490",
+            "code": "342",
+            "name": "Creditas Sociedade de Crédito Direto S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 178,
+        "fields": {
+            "ispb": "24537861",
+            "code": "343",
+            "name": "FFA SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESA DE PEQUENO PORTE LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 179,
+        "fields": {
+            "ispb": "33264668",
+            "code": "348",
+            "name": "Banco XP S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 180,
+        "fields": {
+            "ispb": "27214112",
+            "code": "349",
+            "name": "AL5 S.A. CRÉDITO, FINANCIAMENTO E INVESTIMENTO"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 181,
+        "fields": {
+            "ispb": "1330387",
+            "code": "350",
+            "name": "COOPERATIVA DE CRÉDITO RURAL DE PEQUENOS AGRICULTORES E DA REFORMA AGRÁRIA DO CE"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 182,
+        "fields": {
+            "ispb": "29162769",
+            "code": "352",
+            "name": "TORO CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 183,
+        "fields": {
+            "ispb": "52904364",
+            "code": "354",
+            "name": "NECTON INVESTIMENTOS  S.A. CORRETORA DE VALORES MOBILIÁRIOS E COMMODITIES"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 184,
+        "fields": {
+            "ispb": "34335592",
+            "code": "355",
+            "name": "ÓTIMO SOCIEDADE DE CRÉDITO DIRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 185,
+        "fields": {
+            "ispb": "9464032",
+            "code": "358",
+            "name": "MIDWAY S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 186,
+        "fields": {
+            "ispb": "5351887",
+            "code": "359",
+            "name": "ZEMA CRÉDITO, FINANCIAMENTO E INVESTIMENTO S/A"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 187,
+        "fields": {
+            "ispb": "2276653",
+            "code": "360",
+            "name": "TRINUS CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 188,
+        "fields": {
+            "ispb": "1027058",
+            "code": "362",
+            "name": "CIELO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 189,
+        "fields": {
+            "ispb": "62285390",
+            "code": "363",
+            "name": "SINGULARE CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 190,
+        "fields": {
+            "ispb": "9089356",
+            "code": "364",
+            "name": "GERENCIANET S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 191,
+        "fields": {
+            "ispb": "68757681",
+            "code": "365",
+            "name": "SIMPAUL CORRETORA DE CAMBIO E VALORES MOBILIARIOS  S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 192,
+        "fields": {
+            "ispb": "61533584",
+            "code": "366",
+            "name": "BANCO SOCIETE GENERALE BRASIL S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 193,
+        "fields": {
+            "ispb": "34711571",
+            "code": "367",
+            "name": "VITREO DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 194,
+        "fields": {
+            "ispb": "8357240",
+            "code": "368",
+            "name": "Banco CSF S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 195,
+        "fields": {
+            "ispb": "61088183",
+            "code": "370",
+            "name": "Banco Mizuho do Brasil S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 196,
+        "fields": {
+            "ispb": "92875780",
+            "code": "371",
+            "name": "WARREN CORRETORA DE VALORES MOBILIÁRIOS E CÂMBIO LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 197,
+        "fields": {
+            "ispb": "35977097",
+            "code": "373",
+            "name": "UP.P SOCIEDADE DE EMPRÉSTIMO ENTRE PESSOAS S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 198,
+        "fields": {
+            "ispb": "27351731",
+            "code": "374",
+            "name": "REALIZE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 199,
+        "fields": {
+            "ispb": "33172537",
+            "code": "376",
+            "name": "BANCO J.P. MORGAN S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 200,
+        "fields": {
+            "ispb": "17826860",
+            "code": "377",
+            "name": "BMS SOCIEDADE DE CRÉDITO DIRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 201,
+        "fields": {
+            "ispb": "1852137",
+            "code": "378",
+            "name": "BANCO BRASILEIRO DE CRÉDITO SOCIEDADE ANÔNIMA"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 202,
+        "fields": {
+            "ispb": "1658426",
+            "code": "379",
+            "name": "COOPERFORTE - COOPERATIVA DE ECONOMIA E CRÉDITO MÚTUO DE FUNCIONÁRIOS DE INSTITU"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 203,
+        "fields": {
+            "ispb": "22896431",
+            "code": "380",
+            "name": "PICPAY INSTITUIçãO DE PAGAMENTO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 204,
+        "fields": {
+            "ispb": "60814191",
+            "code": "381",
+            "name": "BANCO MERCEDES-BENZ DO BRASIL S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 205,
+        "fields": {
+            "ispb": "4307598",
+            "code": "382",
+            "name": "FIDÚCIA SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESA DE PEQUENO PORTE L"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 206,
+        "fields": {
+            "ispb": "21018182",
+            "code": "383",
+            "name": "EBANX INSTITUICAO DE PAGAMENTOS LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 207,
+        "fields": {
+            "ispb": "11165756",
+            "code": "384",
+            "name": "GLOBAL FINANÇAS SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESA DE PEQUENO"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 208,
+        "fields": {
+            "ispb": "3844699",
+            "code": "385",
+            "name": "COOPERATIVA DE ECONOMIA E CREDITO MUTUO DOS TRABALHADORES PORTUARIOS DA GRANDE V"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 209,
+        "fields": {
+            "ispb": "30680829",
+            "code": "386",
+            "name": "NU FINANCEIRA S.A. - Sociedade de Crédito, Financiamento e Investimento"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 210,
+        "fields": {
+            "ispb": "3215790",
+            "code": "387",
+            "name": "Banco Toyota do Brasil S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 211,
+        "fields": {
+            "ispb": "17184037",
+            "code": "389",
+            "name": "Banco Mercantil do Brasil S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 212,
+        "fields": {
+            "ispb": "59274605",
+            "code": "390",
+            "name": "BANCO GM S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 213,
+        "fields": {
+            "ispb": "8240446",
+            "code": "391",
+            "name": "COOPERATIVA DE CREDITO RURAL DE IBIAM - SULCREDI/IBIAM"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 214,
+        "fields": {
+            "ispb": "59109165",
+            "code": "393",
+            "name": "Banco Volkswagen S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 215,
+        "fields": {
+            "ispb": "7207996",
+            "code": "394",
+            "name": "Banco Bradesco Financiamentos S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 216,
+        "fields": {
+            "ispb": "8673569",
+            "code": "395",
+            "name": "F.D'GOLD - DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 217,
+        "fields": {
+            "ispb": "13884775",
+            "code": "396",
+            "name": "HUB PAGAMENTOS S.A"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 218,
+        "fields": {
+            "ispb": "34088029",
+            "code": "397",
+            "name": "LISTO SOCIEDADE DE CREDITO DIRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 219,
+        "fields": {
+            "ispb": "31749596",
+            "code": "398",
+            "name": "IDEAL CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 220,
+        "fields": {
+            "ispb": "1701201",
+            "code": "399",
+            "name": "Kirton Bank S.A. - Banco Múltiplo"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 221,
+        "fields": {
+            "ispb": "5491616",
+            "code": "400",
+            "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E SERVIÇOS FINANCEIROS DO CENTRO OESTE - CREDIT"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 222,
+        "fields": {
+            "ispb": "15111975",
+            "code": "401",
+            "name": "IUGU INSTITUIÇÃO DE PAGAMENTO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 223,
+        "fields": {
+            "ispb": "36947229",
+            "code": "402",
+            "name": "COBUCCIO SOCIEDADE DE CRÉDITO DIRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 224,
+        "fields": {
+            "ispb": "37880206",
+            "code": "403",
+            "name": "CORA SOCIEDADE DE CRÉDITO DIRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 225,
+        "fields": {
+            "ispb": "37241230",
+            "code": "404",
+            "name": "SUMUP SOCIEDADE DE CRÉDITO DIRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 226,
+        "fields": {
+            "ispb": "37715993",
+            "code": "406",
+            "name": "ACCREDITO - SOCIEDADE DE CRÉDITO DIRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 227,
+        "fields": {
+            "ispb": "329598",
+            "code": "407",
+            "name": "ÍNDIGO INVESTIMENTOS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 228,
+        "fields": {
+            "ispb": "36586946",
+            "code": "408",
+            "name": "BONUSPAGO SOCIEDADE DE CRÉDITO DIRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 229,
+        "fields": {
+            "ispb": "5684234",
+            "code": "410",
+            "name": "PLANNER SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 230,
+        "fields": {
+            "ispb": "5192316",
+            "code": "411",
+            "name": "Via Certa Financiadora S.A. - Crédito, Financiamento e Investimentos"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 231,
+        "fields": {
+            "ispb": "15173776",
+            "code": "412",
+            "name": "SOCIAL BANK BANCO MÚLTIPLO S/A"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 232,
+        "fields": {
+            "ispb": "1858774",
+            "code": "413",
+            "name": "BANCO BV S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 233,
+        "fields": {
+            "ispb": "37526080",
+            "code": "414",
+            "name": "WORK SOCIEDADE DE CRÉDITO DIRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 234,
+        "fields": {
+            "ispb": "19324634",
+            "code": "416",
+            "name": "LAMARA SOCIEDADE DE CRÉDITO DIRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 235,
+        "fields": {
+            "ispb": "37414009",
+            "code": "418",
+            "name": "ZIPDIN SOLUÇÕES DIGITAIS SOCIEDADE DE CRÉDITO DIRETO S/A"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 236,
+        "fields": {
+            "ispb": "38129006",
+            "code": "419",
+            "name": "NUMBRS SOCIEDADE DE CRÉDITO DIRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 237,
+        "fields": {
+            "ispb": "39343350",
+            "code": "421",
+            "name": "LAR COOPERATIVA DE CRÉDITO - LAR CREDI"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 238,
+        "fields": {
+            "ispb": "58160789",
+            "code": "422",
+            "name": "Banco Safra S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 239,
+        "fields": {
+            "ispb": "460065",
+            "code": "423",
+            "name": "COLUNA S/A DISTRIBUIDORA DE TITULOS E VALORES MOBILIÁRIOS"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 240,
+        "fields": {
+            "ispb": "3881423",
+            "code": "425",
+            "name": "SOCINAL S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 241,
+        "fields": {
+            "ispb": "11285104",
+            "code": "426",
+            "name": "Biorc Financeira - Crédito, Financiamento e Investimento S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 242,
+        "fields": {
+            "ispb": "27302181",
+            "code": "427",
+            "name": "COOPERATIVA DE CREDITO DOS SERVIDORES DA UNIVERSIDADE FEDERAL DO ESPIRITO SANTO"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 243,
+        "fields": {
+            "ispb": "39664698",
+            "code": "428",
+            "name": "CRED-SYSTEM SOCIEDADE DE CRÉDITO DIRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 244,
+        "fields": {
+            "ispb": "5676026",
+            "code": "429",
+            "name": "Crediare S.A. - Crédito, financiamento e investimento"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 245,
+        "fields": {
+            "ispb": "204963",
+            "code": "430",
+            "name": "COOPERATIVA DE CREDITO RURAL SEARA - CREDISEARA"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 246,
+        "fields": {
+            "ispb": "44077014",
+            "code": "433",
+            "name": "BR-CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 247,
+        "fields": {
+            "ispb": "38224857",
+            "code": "435",
+            "name": "DELCRED SOCIEDADE DE CRÉDITO DIRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 248,
+        "fields": {
+            "ispb": "67030395",
+            "code": "438",
+            "name": "PLANNER TRUSTEE DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 249,
+        "fields": {
+            "ispb": "16695922",
+            "code": "439",
+            "name": "ID CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 250,
+        "fields": {
+            "ispb": "82096447",
+            "code": "440",
+            "name": "CREDIBRF - COOPERATIVA DE CRÉDITO"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 251,
+        "fields": {
+            "ispb": "87963450",
+            "code": "442",
+            "name": "MAGNETIS - DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 252,
+        "fields": {
+            "ispb": "39416705",
+            "code": "443",
+            "name": "CREDIHOME SOCIEDADE DE CRÉDITO DIRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 253,
+        "fields": {
+            "ispb": "40654622",
+            "code": "444",
+            "name": "TRINUS SOCIEDADE DE CRÉDITO DIRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 254,
+        "fields": {
+            "ispb": "35551187",
+            "code": "445",
+            "name": "PLANTAE S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 255,
+        "fields": {
+            "ispb": "12392983",
+            "code": "447",
+            "name": "MIRAE ASSET WEALTH MANAGEMENT (BRAZIL) CORRETORA DE CÂMBIO, TÍTULOS E VALORES MO"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 256,
+        "fields": {
+            "ispb": "39669186",
+            "code": "448",
+            "name": "HEMERA DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 257,
+        "fields": {
+            "ispb": "37555231",
+            "code": "449",
+            "name": "DMCARD SOCIEDADE DE CRÉDITO DIRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 258,
+        "fields": {
+            "ispb": "13203354",
+            "code": "450",
+            "name": "FITBANK PAGAMENTOS ELETRONICOS S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 259,
+        "fields": {
+            "ispb": "40475846",
+            "code": "451",
+            "name": "J17 - SOCIEDADE DE CRÉDITO DIRETO S/A"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 260,
+        "fields": {
+            "ispb": "39676772",
+            "code": "452",
+            "name": "CREDIFIT SOCIEDADE DE CRÉDITO DIRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 261,
+        "fields": {
+            "ispb": "41592532",
+            "code": "454",
+            "name": "MÉRITO DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 262,
+        "fields": {
+            "ispb": "60498557",
+            "code": "456",
+            "name": "Banco MUFG Brasil S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 263,
+        "fields": {
+            "ispb": "39587424",
+            "code": "457",
+            "name": "UY3 SOCIEDADE DE CRÉDITO DIRETO S/A"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 264,
+        "fields": {
+            "ispb": "7253654",
+            "code": "458",
+            "name": "HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 265,
+        "fields": {
+            "ispb": "4546162",
+            "code": "459",
+            "name": "COOPERATIVA DE CRÉDITO MÚTUO DE SERVIDORES PÚBLICOS DO ESTADO DE SÃO PAULO - CRE"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 266,
+        "fields": {
+            "ispb": "42047025",
+            "code": "460",
+            "name": "UNAVANTI SOCIEDADE DE CRÉDITO DIRETO S/A"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 267,
+        "fields": {
+            "ispb": "19540550",
+            "code": "461",
+            "name": "ASAAS GESTÃO FINANCEIRA INSTITUIÇÃO DE PAGAMENTO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 268,
+        "fields": {
+            "ispb": "39908427",
+            "code": "462",
+            "name": "STARK SOCIEDADE DE CRÉDITO DIRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 269,
+        "fields": {
+            "ispb": "40434681",
+            "code": "463",
+            "name": "AZUMI DISTRIBUIDORA DE TíTULOS E VALORES MOBILIáRIOS LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 270,
+        "fields": {
+            "ispb": "60518222",
+            "code": "464",
+            "name": "Banco Sumitomo Mitsui Brasileiro S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 271,
+        "fields": {
+            "ispb": "40083667",
+            "code": "465",
+            "name": "CAPITAL CONSIG SOCIEDADE DE CRÉDITO DIRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 272,
+        "fields": {
+            "ispb": "33886862",
+            "code": "467",
+            "name": "MASTER S/A CORRETORA DE CâMBIO, TíTULOS E VALORES MOBILIáRIOS"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 273,
+        "fields": {
+            "ispb": "4862600",
+            "code": "468",
+            "name": "PORTOSEG S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTO"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 274,
+        "fields": {
+            "ispb": "7138049",
+            "code": "469",
+            "name": "J&F DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 275,
+        "fields": {
+            "ispb": "18394228",
+            "code": "470",
+            "name": "CDC SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESADE PEQUENO PORTE LTDA."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 276,
+        "fields": {
+            "ispb": "33466988",
+            "code": "473",
+            "name": "Banco Caixa Geral - Brasil S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 277,
+        "fields": {
+            "ispb": "33042953",
+            "code": "477",
+            "name": "Citibank N.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 278,
+        "fields": {
+            "ispb": "11760553",
+            "code": "478",
+            "name": "GAZINCRED S.A. SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 279,
+        "fields": {
+            "ispb": "60394079",
+            "code": "479",
+            "name": "Banco ItauBank S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 280,
+        "fields": {
+            "ispb": "62331228",
+            "code": "487",
+            "name": "DEUTSCHE BANK S.A. - BANCO ALEMAO"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 281,
+        "fields": {
+            "ispb": "46518205",
+            "code": "488",
+            "name": "JPMorgan Chase Bank, National Association"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 282,
+        "fields": {
+            "ispb": "49336860",
+            "code": "492",
+            "name": "ING Bank N.V."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 283,
+        "fields": {
+            "ispb": "44189447",
+            "code": "495",
+            "name": "Banco de La Provincia de Buenos Aires"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 284,
+        "fields": {
+            "ispb": "32062580",
+            "code": "505",
+            "name": "Banco Credit Suisse (Brasil) S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 285,
+        "fields": {
+            "ispb": "17352220",
+            "code": "545",
+            "name": "SENSO CORRETORA DE CAMBIO E VALORES MOBILIARIOS S.A"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 286,
+        "fields": {
+            "ispb": "59118133",
+            "code": "600",
+            "name": "Banco Luso Brasileiro S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 287,
+        "fields": {
+            "ispb": "31895683",
+            "code": "604",
+            "name": "Banco Industrial do Brasil S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 288,
+        "fields": {
+            "ispb": "78626983",
+            "code": "610",
+            "name": "Banco VR S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 289,
+        "fields": {
+            "ispb": "61820817",
+            "code": "611",
+            "name": "Banco Paulista S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 290,
+        "fields": {
+            "ispb": "31880826",
+            "code": "612",
+            "name": "Banco Guanabara S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 291,
+        "fields": {
+            "ispb": "60850229",
+            "code": "613",
+            "name": "Omni Banco S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 292,
+        "fields": {
+            "ispb": "59285411",
+            "code": "623",
+            "name": "Banco Pan S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 293,
+        "fields": {
+            "ispb": "61348538",
+            "code": "626",
+            "name": "BANCO C6 CONSIGNADO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 294,
+        "fields": {
+            "ispb": "58497702",
+            "code": "630",
+            "name": "BANCO LETSBANK S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 295,
+        "fields": {
+            "ispb": "68900810",
+            "code": "633",
+            "name": "Banco Rendimento S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 296,
+        "fields": {
+            "ispb": "17351180",
+            "code": "634",
+            "name": "BANCO TRIANGULO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 297,
+        "fields": {
+            "ispb": "60889128",
+            "code": "637",
+            "name": "BANCO SOFISA S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 298,
+        "fields": {
+            "ispb": "62144175",
+            "code": "643",
+            "name": "Banco Pine S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 299,
+        "fields": {
+            "ispb": "60872504",
+            "code": "652",
+            "name": "Itaú Unibanco Holding S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 300,
+        "fields": {
+            "ispb": "61024352",
+            "code": "653",
+            "name": "BANCO VOITER S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 301,
+        "fields": {
+            "ispb": "92874270",
+            "code": "654",
+            "name": "BANCO DIGIMAIS S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 302,
+        "fields": {
+            "ispb": "59588111",
+            "code": "655",
+            "name": "Banco Votorantim S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 303,
+        "fields": {
+            "ispb": "62232889",
+            "code": "707",
+            "name": "Banco Daycoval S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 304,
+        "fields": {
+            "ispb": "78632767",
+            "code": "712",
+            "name": "Banco Ourinvest S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 305,
+        "fields": {
+            "ispb": "80271455",
+            "code": "720",
+            "name": "BANCO RNX S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 306,
+        "fields": {
+            "ispb": "558456",
+            "code": "739",
+            "name": "Banco Cetelem S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 307,
+        "fields": {
+            "ispb": "517645",
+            "code": "741",
+            "name": "BANCO RIBEIRAO PRETO S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 308,
+        "fields": {
+            "ispb": "795423",
+            "code": "743",
+            "name": "Banco Semear S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 309,
+        "fields": {
+            "ispb": "33479023",
+            "code": "745",
+            "name": "Banco Citibank S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 310,
+        "fields": {
+            "ispb": "30723886",
+            "code": "746",
+            "name": "Banco Modal S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 311,
+        "fields": {
+            "ispb": "1023570",
+            "code": "747",
+            "name": "Banco Rabobank International Brasil S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 312,
+        "fields": {
+            "ispb": "1181521",
+            "code": "748",
+            "name": "BANCO COOPERATIVO SICREDI S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 313,
+        "fields": {
+            "ispb": "29030467",
+            "code": "751",
+            "name": "Scotiabank Brasil S.A. Banco Múltiplo"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 314,
+        "fields": {
+            "ispb": "1522368",
+            "code": "752",
+            "name": "Banco BNP Paribas Brasil S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 315,
+        "fields": {
+            "ispb": "74828799",
+            "code": "753",
+            "name": "Novo Banco Continental S.A. - Banco Múltiplo"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 316,
+        "fields": {
+            "ispb": "76543115",
+            "code": "754",
+            "name": "Banco Sistema S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 317,
+        "fields": {
+            "ispb": "62073200",
+            "code": "755",
+            "name": "Bank of America Merrill Lynch Banco Múltiplo S.A."
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 318,
+        "fields": {
+            "ispb": "2038232",
+            "code": "756",
+            "name": "BANCO COOPERATIVO SICOOB S.A. - BANCO SICOOB"
+        }
+    },
+    {
+        "model": "investment.bank",
+        "pk": 319,
+        "fields": {
+            "ispb": "2318507",
+            "code": "757",
+            "name": "BANCO KEB HANA DO BRASIL S.A."
+        }
+    }
+]

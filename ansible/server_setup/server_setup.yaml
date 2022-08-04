@@ -1,0 +1,25 @@
+---
+- hosts: webservers
+  become: True
+  gather_facts: no
+  vars_files:
+    - ../host_vars/common.yaml
+
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+
+  roles:
+    - role: user
+      tags: user
+    - role: nginx 
+      tags: nginx
+    - role: packages
+      tags: packages
+    - role: db
+      tags: db
+    - role: app
+      tags: app
+    - role: gunicorn
+      tags: gunicorn
+    - role: celery
+      tags: celery

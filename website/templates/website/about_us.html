@@ -1,0 +1,25 @@
+
+{% comment %}
+    The about_us text is a html text from tinymce. The tags strong and span
+    in the text has its colors not affected by div id_about_us_text style
+    This style below force color matching
+{% endcomment %}
+
+<style>
+    #id_about_us_text strong, span {
+        color: {{company.about_us_colors.color}};
+    }
+</style>
+
+<div id="id_about_us_text" style="background-color: {{company.about_us_colors.background_color}}; color: {{company.about_us_colors.color}}">
+    <div class="row p-0 m-0">
+        <div class="col p-4 m-4">
+            {{company.about_us|safe}}
+        </div>
+        {% if company.abt_us_signup_btn %}
+        <div class="text-center mb-4 p-4">
+            <a href="/contas/signup/" class='btn btn-success rounded-pill px-4 fs-5 '> {{company.abt_us_signup_btn}} </a>
+        </div>
+        {% endif %}
+    </div>
+</div>

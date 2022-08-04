@@ -1,0 +1,94 @@
+{% extends 'common/page.html' %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="d-flex justify-content-center align-items-center p-4">
+        <div class="card">
+            <div class="card-header">
+                <div class="h4 text-success">
+                    Configurações iniciais
+                </div>
+            </div>
+            <div class="card-body m-0 p-2">
+                <table class='table table-sm'>
+                    <body>
+                        <tr>
+                            <td>
+                                <div class="text-success">Termos de aceite</div>
+                                <ul>
+                                    <li class="text-secondary">
+                                        {% if signup_term %}
+                                            <span class="p-0 m-0 text-muted"> Cadastro na plataforma <i class="bi bi-check-lg text-success"></i> </span>
+                                        {% else %}
+                                            <a class="p-0 m-0 text-danger" href="{% url 'core:acceptance_term_list' %}"> Cadastro na plataforma </a>
+                                        {% endif %}
+                                    </li>
+                                    <li class="text-secondary">
+                                        {% if account_term %}
+                                            <span class="p-0 m-0 text-muted"> Política de privacidade <i class="bi bi-check-lg text-success"></i> </span>
+                                        {% else %}
+                                            <a class="p-0 m-0 text-danger" href="{% url 'core:acceptance_term_list' %}"> Política de privacidade  </a>
+                                        {% endif %}
+
+
+                                    </li>
+                                </ul>
+                            </td>
+                            <td class="text-end"><a class="page-menu-link" href=""><i class="bi bi-file-text btn text-success p-0 m-0 "></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><a class="btn 
+                                text-{%if products_num %}success{% else %}danger{% endif %} 
+                                p-0 m-0" href="{% url 'products:product_list' %}">Criar produtos ({{products_num}})</a></td>
+                            <td class="text-end"><a class="page-menu-link" href=""><i class="bi bi-wallet btn text-success p-0 m-0 "></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="btn 
+                                text-{%if products_num == agreements_num and products_num != 0 %}success{% else %}danger{% endif %}
+                                p-0 m-0" href="{% url 'products:agreement_list' %}">Contratos de produtos ({{agreements_num}})</a>
+                            </td>
+                            <td class="text-end"><a class="page-menu-link" href=""><i class="bi bi-file-text btn text-success p-0 m-0 "></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><a class="btn 
+                                text-{%if invprof_num %}success{% else %}danger{% endif %}                                 
+                                p-0 m-0" href="{% url 'products:profile_product_list' %}">Criar perfis de investidor ({{invprof_num}})</a></td>
+                            <td class="text-end"><a class="page-menu-link" href=""><i class="bi bi-coin  btn text-success p-0 m-0 "></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                {% if has_profile_test %}
+                                    <span class="text-muted p-0 m-0">Criar teste de perfil do investidor <i class="bi bi-check-lg text-success"></i></span>
+                                {% else %}
+                                    <a class="btn text-danger p-0 m-0" href="{% url 'investorprofile:profile_test_list' %}">Criar teste de perfil do investidor</a>
+                                {% endif %}
+                            </td>
+                            <td class="text-end"><a class="page-menu-link" href=""><i class="bi bi-clipboard btn text-success p-0 m-0 "></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="btn text-success p-0 m-0" href="{% url 'products:dashboard_list' %}">Configurar dashboards ({{dashboards_num}})</a>
+                            </td>
+                            <td class="text-end"><a class="page-menu-link" href=""><i class="bi bi-graph-up  btn text-success p-0 m-0 "></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><a class="btn text-success p-0 m-0" href="{% url 'emailtemplate:emailtemplate_list' %}">Configurar modelos de emails</a>
+                            </td>
+                            <td class="text-end"><a class="page-menu-link" href=""><i class="bi bi-envelope  btn text-success p-0 m-0 "></i></a></td>
+                        </tr>
+                    </body>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% for message in messages %}
+{% if 'core_modal' in message.extra_tags %}
+    {% include 'common/message_modal.html' %}
+{% endif %}
+{% endfor %}
+
+{% endblock %}

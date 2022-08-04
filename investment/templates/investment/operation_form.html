@@ -1,0 +1,25 @@
+{% extends 'common/form.html' %}
+
+{% block operation_info %}
+{% if bank_info %}
+<div class="">
+    <a class="text-decoration-none text-success" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        {{bank_info.description}} <i class="bi bi-bank"></i>
+    </a>
+    <div class="collapse" id="collapseExample">
+        <ul class="list-group border-none">
+            <li class="list-group-item">{{bank_info.name}}</li>
+            {% if bank_info.cnpj %}
+            <li class="list-group-item">CNPJ: {{bank_info.cnpj}}</li>
+            {% endif %}
+            {% if bank_info.cpf %}
+            <li class="list-group-item">CPF: {{bank_info.cpf}}</li>
+            {% endif %}
+            <li class="list-group-item">Banco: {{bank_info.bank}}</li>
+            <li class="list-group-item">Agência: {{bank_info.bank_branch}}{{c}}</li>
+            <li class="list-group-item">Conta: {{bank_info.bank_account}}{{c}}</li>
+        </ul>  
+      </div>
+</div>
+{% endif %}
+{% endblock %}            

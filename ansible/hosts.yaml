@@ -1,0 +1,11 @@
+all:
+  children:
+    webservers:
+      hosts:
+        hawksx:
+          ansible_host: hawksx.com  #(191.252.59.182)
+        reddex:
+          ansible_host: reddex.com.br #(191.252.64.70)
+      vars:
+        ansible_ssh_user: root
+        ssl_target_folder: /etc/ssl

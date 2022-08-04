@@ -1,0 +1,13 @@
+---
+celery_user: "{{ user_name }}"
+celery_group: "{{ user_group }}"
+
+celery_work_dir: "{{ project_path }}"
+
+celery_app_name: "{{ application_name }}"
+celery_bin: "{{ virtualenv_path }}/bin/celery"
+
+celery_log_dir: "{{ application_log_dir }}"
+celery_pid_file_dir: "{{ application_run_dir }}"
+
+celery_log_level: 'INFO'

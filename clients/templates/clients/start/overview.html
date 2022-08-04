@@ -1,0 +1,22 @@
+{% load common_tags %}
+<div class="card">
+    <div class="card-header">
+        <div class="h4">
+            Visão geral
+        </div>
+    </div>
+    <div class="card-body">
+        <table class="table table-{{request.theme}}">
+            <tbody>
+                <tr>
+                    <td class="text-success" >Saldo líquido</td>
+                    <td class="text-end">{{net_balance|default_if_none:"-----"}}</td>
+                </tr>
+                <tr>
+                    <td class="text-success">Saldo bloqueado</td>
+                    <td class="text-end">{{blocked_balance|default_if_none:"-----"}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+{% extends 'common/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container-fluid mt-2 position-relative">
+    <div class="card">
+        <div class="card-header">
+            <div class="h2 pb-2 text-success"> {{title}}</div>
+            {% if header_message %}
+            <div class="pb-2 text-success"> {{header_message|safe}}</div>
+            {% endif %}
+        </div>
+        <div class="card-body">
+            <div class="d-flex flex-column">
+                <form method="post" autocomplete="off" novalidate id="form_id" enctype="multipart/form-data">
+                    {% block form %}
+                    {% crispy form %}
+                    {% endblock %}
+                </form>
+                {% block operation_info %}
+                {% endblock %}            
+            </div>
+        </div>
+        <div class="card-footer bg-transparent">
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-end">
+                <div class="me-auto">
+                    {% block left_buttons %}
+                    {% endblock %}
+                </div>
+                {% block buttons %}
+                {% for control in controls %}
+                {% if control.control_type == 'button' %}
+
+                <button type={% if control.value == confirm_operation %} "button" {% else %} "submit" {% endif %}
+                    form="form_id" name="{{control.name}}" value="{{control.value}}" 
+                    {% if control.value == confirm_operation %} data-bs-toggle="modal" data-bs-target="#confirm_modal" {% endif %}
+                    class="btn btn-{{control.color}}"
+                    {% if control.disabled %} disabled {% endif %}>
+                    {{control.text}}
+                </button>
+
+                {% elif control.control_type == 'link' and control.value %}
+                <a class="btn btn-{{control.color}}" href="{{control.value}}">{{control.text}}</a>
+                {% endif %}
+                {% endfor %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'common/confirm_modal.html' %}
+
+{% endblock %}

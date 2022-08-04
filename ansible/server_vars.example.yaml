@@ -1,0 +1,38 @@
+---
+# Postgress
+application_db_name: ""
+application_db_user: ""
+application_db_pass: ""
+
+# Django secret key
+application_secret_key: 
+
+# Django allowed hosts
+application_allowed_hosts: "*"
+
+# Django superuser
+admin_email: ""
+admin_password: ""
+
+# Server name to nginx
+server_name_http: ""
+server_name_https: ""
+
+# Certificate file names (not path)
+# Copy the certificate files to folder below
+# ansible/server_setup/roles/nginx/files/ssl/certificates
+ssl_crt_file: ""
+ssl_key_file: ""
+
+# SSH key on local machine to access repository
+# Follow repository instruction to allow ssh access
+ssh_repo_key_filename: ""
+
+# email (django)
+email_use_tls: ""
+email_use_ssl: ""
+email_host: ""
+email_host_user: ""
+email_host_password: ""
+email_port: ""
+

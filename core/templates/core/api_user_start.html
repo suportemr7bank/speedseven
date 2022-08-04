@@ -1,0 +1,35 @@
+{% extends 'common/page.html' %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="d-flex justify-content-center align-items-center p-4">
+        <div class="card bg-light">
+            <div class="card-header">
+                <div class="h4 text-primary">
+                    Acesso à API
+                </div>
+            </div>
+            <div class="card-body bg-light m-0 p-2">
+                <table class='table table-sm'>
+                    <body>
+                        <tr>
+                            <td>
+                                <a class="p-0 m-0" href="{% url 'schema-redoc' %}"> Documentação </a>
+                            </td>
+                        </tr>
+                        {% if not api_production_mode %}
+                        <tr>
+                            <td>
+                                <a class="p-0 m-0" href="{% url 'schema-swagger-ui' %}"> Interface para api </a>
+                            </td>
+                        </tr>
+                        {% endif %}
+                    </body>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

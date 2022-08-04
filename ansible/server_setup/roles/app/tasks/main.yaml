@@ -1,0 +1,96 @@
+---
+- name: Git checkout
+  become_user: "{{ user_name }}"
+  git:
+    repo: "{{ git_repository }}"
+    dest: "{{ django_project_path }}"
+    clone: yes
+    version: master
+    accept_hostkey: yes
+    key_file: "{{user_home}}/.ssh/{{ssh_repo_key_filename}}"
+
+- name: Change ownership
+  file:
+    path: "{{ sites_path }}"
+    group: "{{ user_group }}"
+    state: directory
+    recurse: yes
+
+- name: Install requirements
+  pip:
+    requirements:  "{{ django_project_path }}/requirements.txt"
+    virtualenv: "{{ virtualenv_path }}"
+  become_user: "{{ user_name }}"
+
+- name: Change ownership
+  file:
+    path: "{{ virtualenv_root_path }}"
+    group: "{{ user_group }}"
+    state: directory
+    recurse: yes
+
+- name: Create the django .env file
+  become_user: "{{ user_name }}"
+  template: 
+    src: env.j2
+    dest: "{{ django_project_path }}/{{ application_name }}/.env"
+    owner: "{{ user_name }}"
+    group: "{{ user_group }}"
+    mode: 0755
+    backup: yes
+
+- name: Run Django makemigrations (for packages)
+  become_user: "{{ user_name }}"
+  django_manage:
+    command: makemigrations
+    app_path: "{{ django_project_path }}"
+    virtualenv: "{{ virtualenv_path }}"
+    settings: "{{ django_settings_file }}"
+  environment: 
+    DEBUG: "False"
+    SECRET_KEY: "{{ django_secret_key }}"
+    DATABASE_URL: "{{ application_db_env_url }}"
+  tags: django.makemigrations
+
+- name: Run Django database migrations
+  become_user: "{{ user_name }}"
+  django_manage:
+    command: migrate
+    app_path: "{{ django_project_path }}"
+    virtualenv: "{{ virtualenv_path }}"
+    settings: "{{ django_settings_file }}"
+  environment: 
+    DEBUG: "False"
+    SECRET_KEY: "{{ django_secret_key }}"
+    DATABASE_URL: "{{ application_db_env_url }}"
+  tags: django.migrate
+
+- name: Run django collectstatic
+  become_user: "{{ user_name }}"
+  django_manage:
+    command: collectstatic
+    app_path: "{{ django_project_path }}"
+    virtualenv: "{{ virtualenv_path }}"
+    settings: "{{ django_settings_file }}"
+  environment: 
+    DEBUG: "False"
+    SECRET_KEY: "{{ django_secret_key }}"
+    DATABASE_URL: "{{ application_db_env_url }}"
+  
+  tags: django.collectstatic
+
+- name: django create superuser
+  become_user: "{{ user_name }}"
+  django_manage:
+    virtualenv: "{{ virtualenv_path }}"
+    app_path: "{{ project_path }}"
+    command: "createsuperuser --noinput --username={{ django_admin_email }} --email={{ django_admin_email }}"
+  environment: 
+    DJANGO_SUPERUSER_PASSWORD: "{{ django_admin_password }}"
+  ignore_errors: true
+
+- name: Restart application
+  systemd:
+    name: "{{ application_name }}"
+    state: restarted
+  ignore_errors: true

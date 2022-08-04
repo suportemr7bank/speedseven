@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <div class="container-fluid">
+        {% include 'common/menu_logo.html' %}
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                {% block navigation_menu %}
+                {% endblock%}
+            </ul>
+
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        {{request.user.email}}
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li>
+                            <div class="ms-3">
+                                <form method="POST" action="{% url 'account_profile_theme' %}">
+                                {% csrf_token %}
+                                <div class="form-check">
+                                    <input class="form-check-input" name="theme" type="checkbox" id="id_theme" onChange='submit();'
+                                    {% if request.theme == 'dark' %} checked {% endif %}>
+                                    <label class="form-check-label" for="id_theme_check">
+                                      Tema escuro
+                                    </label>
+                                </div>
+                                </form>    
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        {% block user_profile %}
+                        {% endblock%}
+                        <li>
+                            <a class="dropdown-item btn" data-bs-toggle="modal" data-bs-target="#logout_modal">
+                                <i class="bi bi-box-arrow-right"></i> Sair
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+{% include 'account/logout_modal.html' %}

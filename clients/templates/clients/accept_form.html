@@ -1,0 +1,15 @@
+{% extends 'common/form.html' %}
+
+{% block form %}
+{% if form.fields %}
+{{block.super}}
+{% else %}
+<div class="h4"> Etapa não disponível no momento. Tente mais tarde </div>
+{% endif %}
+{% endblock %}
+
+{% block buttons %}
+{% if form.fields %}
+{{block.super}}
+{% endif %}
+{% endblock %}

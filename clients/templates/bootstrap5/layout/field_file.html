@@ -1,0 +1,19 @@
+{% load crispy_forms_field %}
+
+<div class="{{ field_class }} mb-2">
+    {% for widget in field.subwidgets %}
+    <div {% if field.errors %} class="is-invalid"{%endif%}>
+        <input type="{{ widget.data.type }}" name="{{ widget.data.name }}" class="custom-file-label form-control{% if widget.data.attrs.class %} {{ widget.data.attrs.class }}{% endif %}{% if field.errors %} is-invalid{%endif%}"{% if field.field.disabled %} disabled{% endif %}{% for name, value in widget.data.attrs.items %}{% if value is not False and name != 'class' %} {{ name }}{% if value is not True %}="{{ value|stringformat:'s' }}"{% endif %}{% endif %}{% endfor %}>
+        {% include 'bootstrap5/layout/help_text_and_errors.html' %}
+    </div>
+    {% if widget.data.is_initial %}
+        <div class="input-group mb-2 ms-2">
+            <a href="{{ field.value.url }}"> ver arquivo </a>
+        </div>
+    {% endif %}
+    {% endfor %}
+</div>
+
+<style>
+</style>
+

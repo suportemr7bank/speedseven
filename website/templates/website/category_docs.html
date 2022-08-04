@@ -1,0 +1,25 @@
+{% extends 'website/page.html' %}
+
+{% block content %}
+<div class="container-fluid mt-2 text-success noprint ">
+    {% block page_title %}
+    <div class="h2 text-secondary pt-4 text-center">{{title}}</div>
+    {% endblock %}
+</div>
+<div class="container-fluid m-0 p-0">
+    {% block page_boby %}
+    <div class="container noprint pb-4">
+        <div class="d-flex flex-column justify-content-center bg-white" style="padding: 5rem 5rem;">
+            {{content.text|safe}}
+        </div>
+    </div>
+    <div class="print" style="display: none">
+        <div class="d-flex flex-column justify-content-center" style="padding: 1rem 2rem;">
+            {{content.text|safe}}
+        </div>
+    </div>
+    {% endblock %}
+</div>
+{% endblock %}
+
+
